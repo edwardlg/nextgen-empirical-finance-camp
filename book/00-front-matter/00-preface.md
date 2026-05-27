@@ -1,0 +1,48 @@
+# Preface
+
+*by Lei Gao*
+
+I want to start with a confession. When I was your age, I thought the exciting science happened in laboratories — in particle accelerators, in clean rooms, behind doors that required a badge. Finance, to the extent I thought about it at all, sounded like the opposite of science: a place where people in suits had opinions about which stocks would go up. It took me an embarrassingly long time to learn that some of the most consequential, genuinely difficult, genuinely *answerable* scientific questions of our time are sitting in plain sight, in public financial data that anyone with a laptop and the right training can download tonight.
+
+That is the bet of this book, and of the eight weeks it is built for: that a quantitatively gifted seventeen-year-old, given honest tools and held to honest standards, can do real empirical science about how money, markets, and credit actually work in the world. Not a simulation of science. Not a science-fair diorama of science. The actual thing — a question nobody has cleanly answered, a dataset, a research design that could be wrong, and the discipline to find out whether it is.
+
+## Why empirical finance, and why you
+
+Let me tell you why I think this field is the best possible playground for someone like you.
+
+First, the data are real and they are *public*. The prices at which millions of shares traded last Tuesday, the quarterly filings every public company is legally required to submit to the U.S. Securities and Exchange Commission, the terms of mortgages and municipal bonds, the patents firms file — these are not locked away. They are some of the richest, most carefully recorded human records that exist, and a great deal of it is free or available to you through your university partners. You are not going to spend your summer cleaning a toy dataset I invented to make a point. You are going to touch the same data that move billions of dollars and shape public policy.
+
+Second, the questions matter, and they are not settled. Does the stock market quietly continue in the afternoon whatever direction it took in the morning — and if so, can you measure it without fooling yourself? When two companies that buy and sell from each other share the same large shareholders, does that change what their managers choose to tell the public? When a person applies for a loan, are they treated differently because of who they are, in ways the law forbids and the spreadsheet hides? These are questions with real stakes — for a household's wealth, for a market's fairness, for whether the rules we live under are working. And here is the part that should excite you: for many of them, the honest answer is still "we don't fully know." That is where you come in.
+
+Third — and this is the part that took me years to appreciate — empirical finance is *hard in a way that rewards rigor rather than punishing it.* The world does not run controlled experiments for your convenience. Two things move together; which one caused the other, and could a third thing have caused both? A pattern looks strong; is it real, or did you find it by torturing the data until it confessed? Learning to answer these questions cleanly — to separate a genuine effect from a comforting illusion — is one of the most transferable intellectual skills there is. It will serve you whether you end up in finance, in medicine, in machine learning, or in a discipline that does not exist yet.
+
+I have spent my own career on exactly these problems, and I will be honest with you throughout this book about where the field is solid and where it is still arguing with itself. With my coauthors I have studied whether the stock market has a measurable intraday momentum — a tendency for the first half-hour to predict the last (Gao, Han, Li, and Zhou, 2018, *Journal of Financial Economics*). I have asked whether the web of shared ownership that connects companies along a supply chain changes what their managers disclose (Gao, Han, Kim, and Pan, 2024, *Journal of Corporate Finance*). And in work that I will keep coming back to in these pages because it shows what the stakes can be, my coauthor and I used millions of mortgage records to ask whether same-sex couples were treated differently when they applied to borrow (Gao and Sun, 2019, *Proceedings of the National Academy of Sciences*). I mention these not to advertise them but because each one is a case study in the thing I most want to teach you: how to take a question that *sounds* like an opinion and turn it into a measurement that a skeptic has to take seriously.
+
+## What the eight weeks build toward
+
+This is not a survey course where you read about other people's findings and answer questions at the end of the chapter. Everything we do points at a single destination: by the end of Week 8, you will have written an original empirical research paper — twelve to twenty pages, on real public data, with a research design you can defend and code anyone can rerun and check.
+
+We get there deliberately. The early weeks build the engine: how a regression actually works underneath the black box you may have met in AP Statistics, what its standard errors are really claiming, and the specific ways it lies to you when its assumptions break. The middle weeks are about the question that separates a finding from a coincidence: *causation.* You will learn the modern toolkit — the natural experiments, the comparisons-of-comparisons, the careful designs — that lets a researcher say "this caused that" and mean it. The later weeks turn you loose: reading work at the research frontier the way a critic reads it, finding a question of your own, and seeing it through to a written, replicable result.
+
+You will not be alone in this. Throughout the book you will meet five students — Maya, Devon, Priya, Sam, and Leah — who are working through the same material you are, each chasing a question they care about, from student debt to crypto to climate risk in insurance. They make mistakes on the page so that you can recognize those mistakes in your own work. Treat them as colleagues.
+
+## The standards we hold
+
+I owe you a plain statement of the standards, because they are the whole point.
+
+**We practice honest identification.** When you claim that one thing affects another, you will name — out loud, in writing — the threat to that claim and the feature of your design that addresses it. No hand-waving that something "controls for endogeneity." Which specific alternative explanation worried you, and what did you actually do about it? If the honest answer is "I cannot rule this out," you write *that*, and it makes your paper stronger, not weaker.
+
+**We replicate.** Every result you report must come from code that runs start to finish on a clean machine and produces exactly the number you wrote down. A finding that only you can reproduce, on your laptop, on a good day, is not a finding. This is not bureaucracy; it is the difference between science and storytelling, and the wider world has learned this lesson the hard way.
+
+**We do not hand-wave.** When something is uncertain, we say so. When a result is fragile, we show how fragile. When we do not know, we write "we do not know" — which, for a researcher, is one of the most respectable sentences in the language.
+
+I hold professionals to these standards, and I will hold you to them too — not because you are professionals yet, but because you are entirely capable of meeting them, and because being trusted with a real standard is more interesting than being protected from one. Some of what I have learned about these standards came from settings where the stakes were unusually visible: serving as a financial economist at the SEC, testifying before the U.S. Congress on fair lending, and presenting research to regulators including the Department of Housing and Urban Development and the Federal Reserve. In every one of those rooms, the same rule applied that applies in this book: a careful skeptic is going to read your work, and your job is to have already asked yourself the hard question they are about to ask.
+
+## A note on where this leads
+
+This camp is designed to complement, not replace, the **NextGen FinTech Scholars / Data Science Young Scholars Research Program** at GMU's Schar School, which I direct. Think of these eight weeks as the methodological backbone: the econometrics, the causal reasoning, the habits of reproducible work that make a research project trustworthy. NextGen takes that backbone and gives it a body — the FinTech business context, the team projects, the conference presentation, the polished paper that lands in the Young Scholars Journal and the university's research repository. A student who works through this book arrives at NextGen already fluent in the part that is hardest to teach and most valuable to have: the ability to tell a real result from a pretend one.
+
+You are about to find out that you can do science about the financial world. Welcome. Let's get to work.
+
+— Lei Gao
+Costello College of Business, George Mason University

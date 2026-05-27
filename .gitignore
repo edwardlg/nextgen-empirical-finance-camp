@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+env/
+# Data (licensed data must NOT be committed)
+data/
+*.parquet
+*.csv
+!data-cards/**
+# OS / editor
+.DS_Store
+.vscode/
+# Secrets
+.env
+*.key
