@@ -1,0 +1,63 @@
+# =====================================================================
+# Build the Quarto book and publish to the gh-pages branch.
+#
+# After this workflow first succeeds, enable GitHub Pages in
+# Settings -> Pages, with:
+#   Source:  Deploy from a branch
+#   Branch:  gh-pages   /  (root)
+# The site will then be served at:
+#   https://<owner>.github.io/<repo>/
+#
+# Trigger: push to main, or manual dispatch from the Actions tab.
+# =====================================================================
+name: Render and publish Quarto book
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Allow only one concurrent deployment, cancel in-progress runs.
+concurrency:
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: true
+
+permissions:
+  contents: write   # needed for quarto-actions/publish to push to gh-pages
+
+jobs:
+  build-deploy:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history; quarto-actions/publish needs it for gh-pages
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          # tinytex not needed: HTML-only build with KaTeX math.
+          tinytex: false
+          # Pin a recent Quarto. Bump when needed.
+          version: "1.5.57"
+
+      - name: Quarto check (diagnostic)
+        run: quarto check
+
+      # Notebooks are NOT executed on CI (no data, no API keys).
+      # _quarto.yml sets `execute.enabled: false` globally; the render
+      # below produces static notebook pages from the .ipynb sources.
+      - name: Render Quarto book
+        run: quarto render --to html
+
+      - name: Publish to gh-pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+          path: .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
