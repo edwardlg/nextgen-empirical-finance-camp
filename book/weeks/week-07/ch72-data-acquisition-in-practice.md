@@ -294,30 +294,24 @@ The licensed, cleaned route is **Thomson Reuters / Refinitiv 13F (the s34 files)
 
 **Key identifiers.** Patents key on a **patent number**; inventors and assignees have PatentsView-assigned **disambiguated IDs** (the database's best guess at "this is the same inventor across patents," which is itself an estimate you should treat with care). The hard part — and it is *the* hard part of patent research — is matching a PatentsView **assignee** to a Compustat firm (a GVKEY), because firm names are messy ("IBM" vs. "International Business Machines Corp" vs. a subsidiary). That match is a Chapter 7.4 problem; PatentsView gives you the assignee name and ID to start from.
 
-**Access path.** The **PatentsView API** (the Search/`api.patentsview.org` endpoints) takes a JSON query describing what you want and which fields to return, and paginates results:
+**Access path.** PatentsView **migrated to the USPTO Open Data Portal (ODP) on March 20, 2026**; the legacy `api.patentsview.org` endpoints were discontinued in May 2025 and the interim `search.patentsview.org/api/v1` PatentSearch API was paused at the ODP cutover. The current home is `https://api.uspto.gov` (register for a key at `https://data.uspto.gov/apis/getting-started`), and the header name is **`X-API-KEY`** (lowercase). A targeted query looks like:
 
 ```python
-import requests
-query = {
-    "q": {"_and": [
-        {"_gte": {"patent_date": "2015-01-01"}},
-        {"_lte": {"patent_date": "2015-12-31"}},
-        {"assignees.assignee_organization": "International Business Machines Corporation"},
-    ]},
-    "f": ["patent_id", "patent_date", "assignees.assignee_organization"],  # fields to return
-    "o": {"size": 100},     # page size; you paginate through results
-}
-resp = requests.get("https://search.patentsview.org/api/v1/patent/",
-                    params={"q": json.dumps(query["q"]),
-                            "f": json.dumps(query["f"]),
-                            "o": json.dumps(query["o"])},
-                    headers={"X-Api-Key": os.environ["PATENTSVIEW_API_KEY"]},  # key from env
+import os, requests
+key = os.environ["USPTO_ODP_API_KEY"]      # env only; CONVENTIONS §5
+base = "https://api.uspto.gov"             # pin in config.py
+headers = {"X-API-KEY": key}
+# The post-cutover patent-search endpoint path is still being finalized on ODP;
+# the bulk PatentsView tables are stable today. nb7.2 holds the verified call.
+resp = requests.get(f"{base}/api/v1/patent/applications",
+                    headers=headers,
+                    params={"q": "patentNumber:10000001"},
                     timeout=60)
 ```
 
-For large extracts — *all* patents for a decade, which is millions of rows — the API is the wrong tool; PatentsView publishes **bulk data downloads** (flat TSV files of the whole database), and you download and load those rather than paginating millions of API calls. Rule of thumb: targeted queries (one firm, one year) go through the API; whole-database extracts come from bulk files. The data card lists both.
+For large extracts — *all* patents for a decade, which is millions of rows — the API is the wrong tool; PatentsView publishes **bulk data downloads** (flat TSV files of the whole database, available today through the ODP "PatentsView Bulk Downloads" page), and you download and load those rather than paginating millions of API calls. Rule of thumb: targeted queries (one firm, one year) go through the API; whole-database extracts come from bulk files. The data card lists both.
 
-**Licensing.** Public domain (US government data); no GMU-infrastructure restriction; cache and share freely. The current API does want a free **API key** (read from `PATENTSVIEW_API_KEY`), and the API has been versioned and migrated more than once, so confirm the current endpoint and auth in the data card before a big run. **[CHECK]** the exact current PatentsView API base URL and whether a key is required at run time — this has changed across versions and nb7.2 holds the verified, current call.
+**Licensing.** Public domain (US government data); no GMU-infrastructure restriction; cache and share freely. The current ODP API does want a free **API key** (read from `USPTO_ODP_API_KEY`), and the platform has now been versioned and migrated **three** times in two years (legacy → PatentSearch → ODP), so confirm the current endpoint, header name, and path in the data card and the ODP transition guide (`data.uspto.gov/support/transition-guide/patentsview`) before a big run. **[CHECK]** the exact current ODP patent-search endpoint path post-cutover — nb7.2 holds the verified, current call.
 
 **Rate limits and gotchas.** The API enforces per-key rate limits and *pagination* — you must loop through pages, respecting the limit, and a job that ignores this gets throttled. The deeper gotcha is **disambiguation uncertainty**: "the same inventor" and "the same assignee" are statistical guesses, so inventor mobility and firm patent counts inherit that error — a measurement-error issue (Chapter 1.3) you should acknowledge, not paper over. And patents have a **grant lag**: a 2023 *application* may not be *granted* until 2026, so recent years undercount until the data matures — pin your data release and note the truncation.
 

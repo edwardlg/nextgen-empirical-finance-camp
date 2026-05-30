@@ -177,9 +177,11 @@ This is what the **McCrary density test** checks.[^mccrary] McCrary (2008) propo
 - **Null hypothesis:** the density of $X$ is continuous at $c$ (no sorting). This is what you *hope* to see.
 - **Reject the null** $\Rightarrow$ there is a jump in the density — evidence of manipulation, and a serious threat to the design.
 
-Mechanically, it is a local-linear density estimator on each side, with the test statistic being the log difference in the estimated densities at the boundary. A modern, more robust implementation (Cattaneo–Jansson–Ma) is what most packages ship, but the logic is McCrary's. Run it, plot the density, and report the test. A *failed* density test (a visible jump in the histogram at $c$) is often fatal: it says the cutoff is being gamed and your comparison is broken. A *passed* test is necessary but not sufficient reassurance — it rules out the crudest form of sorting but cannot by itself prove the design is clean (sorting that happens to preserve the density, though contrived, is logically possible).
+Mechanically, it is a local-linear density estimator on each side, with the test statistic being the log difference in the estimated densities at the boundary. A modern, more robust implementation (Cattaneo–Jansson–Ma) is what most packages ship, but the logic is McCrary's.[^cjm] Run it, plot the density, and report the test. A *failed* density test (a visible jump in the histogram at $c$) is often fatal: it says the cutoff is being gamed and your comparison is broken. A *passed* test is necessary but not sufficient reassurance — it rules out the crudest form of sorting but cannot by itself prove the design is clean (sorting that happens to preserve the density, though contrived, is logically possible).
 
 [^mccrary]: McCrary, J. (2008). Manipulation of the Running Variable in the Regression Discontinuity Design: A Density Test. *Journal of Econometrics*, 142(2), 698–714.
+
+[^cjm]: Cattaneo, M. D., Jansson, M., & Ma, X. (2020). Simple Local Polynomial Density Estimators. *Journal of the American Statistical Association*, 115(531), 1449–1455. This is the implementation shipped in the `rddensity` package and called from `rdrobust`'s diagnostics.
 
 ---
 

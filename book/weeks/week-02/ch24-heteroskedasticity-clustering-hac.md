@@ -425,6 +425,8 @@ whole clusters and is the current standard remedy for the few-clusters problem.
 nb2.4 has you watch a cluster-robust SE get unreliable as you shrink $G$, which is the kind of
 thing you only really believe once you have made it happen on your own screen.
 
+[^cgm2011]: Cameron, A. C., Gelbach, J. B., & Miller, D. L. (2011). Robust Inference With Multiway Clustering. *Journal of Business & Economic Statistics*, 29(2), 238–249.
+
 ---
 
 ## 5. HAC / Newey–West: correlation across time

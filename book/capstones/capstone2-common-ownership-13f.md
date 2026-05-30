@@ -2,7 +2,7 @@
 
 > **Track:** Common Ownership from 13F · **Anchor paper:** Gao, Han, Kim & Pan (2024), *Journal of Corporate Finance*.
 >
-> **⚠️ Synthetic-data notice — read before the abstract.** *Every number in this paper — coefficients, standard errors, sample sizes, summary statistics, and the figure — is computed on **synthetic 13F-like holdings data constructed for instruction**, not on real SEC filings or the Thomson/Refinitiv panel. The "results" are **illustrative, not empirical findings**. They exist to show a high-school camp reader what a finished common-ownership paper looks like — the structure, the table craft, the identification discipline, the honest hedging — and they should never be cited as evidence about real markets. Where a real study would report a verified estimate, this exemplar reports a plausibly shaped placeholder, and says so.*
+> **Synthetic-data notice — read before the abstract.** *Every number in this paper — coefficients, standard errors, sample sizes, summary statistics, and the figure — is computed on **synthetic 13F-like holdings data constructed for instruction**, not on real SEC filings or the Thomson/Refinitiv panel. The "results" are **illustrative, not empirical findings**. They exist to show a high-school camp reader what a finished common-ownership paper looks like — the structure, the table craft, the identification discipline, the honest hedging — and they should never be cited as evidence about real markets. Where a real study would report a verified estimate, this exemplar reports a plausibly shaped placeholder, and says so.*
 
 ---
 
@@ -201,11 +201,11 @@ What comes next is what would turn the association into an estimate. The natural
 
 ### References
 
-Bertrand, M., Duflo, E., & Mullainathan, S. (2004). How much should we trust differences-in-differences estimates? *Quarterly Journal of Economics*, 119(1), 249–275. [CHECK page range]
+Bertrand, M., Duflo, E., & Mullainathan, S. (2004). How much should we trust differences-in-differences estimates? *Quarterly Journal of Economics*, 119(1), 249–275.
 
-Gao, L., Han, J., Kim, J.-B., & Pan, T. (2024). Common ownership along the supply chain and management disclosure. *Journal of Corporate Finance*. [CHECK volume/issue/pages]
+Gao, L., Han, J., Kim, J.-B., & Pan, T. (2024). Common ownership along the supply chain and management disclosure. *Journal of Corporate Finance*. [CHECK volume/issue/pages against the final published version]
 
-Petersen, M. A. (2009). Estimating standard errors in finance panel data sets: Comparing approaches. *Review of Financial Studies*, 22(1), 435–480. [CHECK page range]
+Petersen, M. A. (2009). Estimating standard errors in finance panel data sets: Comparing approaches. *Review of Financial Studies*, 22(1), 435–480.
 
 ---
 ---
@@ -228,4 +228,4 @@ Petersen, M. A. (2009). Estimating standard errors in finance panel data sets: C
 
 **Why the data section respects 13F's real limits even on synthetic data.** The long-only, 45-day-lag, and "who is one manager" caveats come straight from the data cards, and they are not ornamental: each one bounds what the measure can mean (a common *long* owner; a stale snapshot; an aggregation choice). Building the synthetic schema to mirror the EDGAR information table means the measure-construction code would run unchanged on a real pull — the recipe is real even though the bytes are not. The CUSIP-licensing caveat is why the synthetic data invents identifiers rather than borrowing real ones.
 
-**Why the citations carry [CHECK] tags.** Per CONVENTIONS §6 and D.5.4, a citation I cannot verify to the page is flagged, never fabricated. The Gao, Han, Kim & Pan (2024) author list, title, and venue are taken verbatim from Prof. Gao's CV anchor list; the volume, issue, and pages I have not verified, so they carry `[CHECK]`. The same goes for the Petersen and BDM page ranges. A visible `[CHECK]` is a flag of honesty; a confidently fabricated page number is the one error a referee never forgives. The lesson for the camp reader: when you do not know, mark the hole — do not fill it with a plausible guess.
+**Why one citation carries a [CHECK] tag.** Per CONVENTIONS §6 and D.5.4, a citation I cannot verify to the page is flagged, never fabricated. The Gao, Han, Kim & Pan (2024) author list, title, and venue are taken verbatim from Prof. Gao's CV anchor list; the volume, issue, and pages I have not yet verified against the final published version, so the tag rides there until they are. The Petersen (2009) page range *RFS* 22(1), 435–480 and the Bertrand–Duflo–Mullainathan (2004) range *QJE* 119(1), 249–275 are now verified against the journal listings. A visible `[CHECK]` is a flag of honesty; a confidently fabricated page number is the one error a referee never forgives. The lesson for the camp reader: when you do not know, mark the hole — do not fill it with a plausible guess.

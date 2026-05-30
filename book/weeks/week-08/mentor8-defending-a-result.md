@@ -137,8 +137,8 @@ These tie today's theme to a paper of mine, offered as a live worked case in exa
 referee presses hardest: a result about CEO *behavior* where the CEOs plainly did not get their
 characteristics assigned at random. The citation, used verbatim:
 
-> Elnahas, A., Gao, L., Hossain, N., & Kim, J-B. (2024). CEO Political Orientation and Information
-> Disclosure. *Journal of Financial and Quantitative Analysis*.
+> Elnahas, A., Gao, L., Hossain, M. N., & Kim, J-B. (2024). CEO Political Ideology and Voluntary
+> Forward-Looking Disclosure. *Journal of Financial and Quantitative Analysis*, 59(8), 3671–3707.
 
 The paper asks whether a CEO's **political orientation** — broadly, whether the executive leans
 conservative or liberal — relates to how the firm they run **discloses information**: how much, how

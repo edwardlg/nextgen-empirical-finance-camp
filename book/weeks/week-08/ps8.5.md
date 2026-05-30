@@ -14,7 +14,7 @@ A note on what this assignment is for. Ch 8.5 stated the thesis as bluntly as it
 
 Two artifacts, both living inside the capstone repository you stood up in Lab 7 — there is no separate upload, because (Lab 7, Step 2) the repository *is* the submission:
 
-1. **The deck** — `paper/slides.pdf` (or `.pptx`), exactly **8 slides** plus optional backup slides, committed to your repo. Alongside it, `paper/slides-notes.md`: your speaker notes, one short block per slide, including your **pre-decided cut line** and your **prepared answers** to the three hardest questions you expect.
+1. **The deck** — `paper/slides.pdf` (or `.pptx`), exactly **7 slides** (1 title + 6 beats) plus optional backup slides, committed to your repo. Alongside it, `paper/slides-notes.md`: your speaker notes, one short block per slide, including your **pre-decided cut line** and your **prepared answers** to the three hardest questions you expect.
 2. **The replication packet** — your finished Lab 7 repository, with the **six load-bearing parts** assembled (Ch 8.5 §5) and a single `make all` / `run_all.sh` entry point that regenerates every table and figure from raw inputs to the compiled paper. Plus `REPLICATION-CHECKLIST.md` at the repo root: the completed packet checklist (Part 4 below), each box checked with the command output or file that proves it.
 
 The deck is short by design; the packet is where most of the work already lives, finished. Both are graded together, because they are the same project: the talk *claims* the numbers, the packet *proves* them.
@@ -23,7 +23,7 @@ The deck is short by design; the packet is where most of the work already lives,
 
 ## Part 1 — The 8-minute deck: the six-beat arc (35 points)
 
-Build a deck that hits the six beats of Ch 8.5 §1, in order, **one beat per slide**, with a title slide making eight. Eight minutes has room for exactly one idea defended cleanly; the slides exist to keep you and the room on that one idea. Budget roughly one minute per slide and target a talk that fits in **seven** minutes in rehearsal, not eight (§3) — the eighth minute is insurance, not content.
+Build a deck that hits the six beats of Ch 8.5 §1, in order, **one beat per slide**, with a title slide making seven in total. Eight minutes has room for exactly one idea defended cleanly; the slides exist to keep you and the room on that one idea. Budget roughly one minute per slide and target a talk that fits in **seven** minutes in rehearsal, not eight (§3) — the eighth minute is insurance, not content.
 
 Each beat below is one slide, and each is graded on whether it does *its* one job and no other:
 
@@ -102,7 +102,7 @@ Now the second surface, the one the skeptic touches alone. The bar from Appendix
 Paste this into `REPLICATION-CHECKLIST.md` at your repo root and check a box only when you can point to the command output or file that proves it — this is exactly the audit a referee (or Prof. Gao, at the conference) would run.
 
 **The deck**
-- [ ] Exactly 8 slides hitting the six beats in order (title · question · why · design · headline · robustness · contribution), one beat per slide.
+- [ ] Exactly 7 slides (1 title + 6 beats) hitting the beats in order (title · question · why · design · headline · robustness · contribution), one beat per slide.
 - [ ] Every slide title is a *full-sentence claim*, not a noun phrase; the argument is legible from the titles alone (list pasted atop `slides-notes.md`).
 - [ ] The design/identification slide shows the *identifying-assumption sentence* (Ch 7.5), not the regression equation.
 - [ ] The headline slide shows *one* number with its *confidence interval*, as a **figure**, with a human-units interpretation sentence.

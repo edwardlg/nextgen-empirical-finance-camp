@@ -3,13 +3,13 @@
 **Problem set:** `book/weeks/week-08/ps8.5.md` (PS 8.5, Week 8).
 **Chapter:** Ch 8.5 — The 8-Minute Presentation & the Replication Packet.
 
-PS 8.5 has no numeric answer key: it is the camp's final project deliverable, and what is graded is not a finding but two *crafts* — whether eight minutes make one argument land, and whether a stranger can rebuild every claimed number with one command. So this appendix entry is not a worked solution but a **model deliverable**: a complete, A-grade slide-by-slide deck outline (eight slides, with speaker notes) plus a completed replication-packet checklist — repo layout and `make`/`run_all` entry point included — for one cast project, followed by **instructor grading notes** that key each piece to the rubric and call out the moves that earn (and lose) points.
+PS 8.5 has no numeric answer key: it is the camp's final project deliverable, and what is graded is not a finding but two *crafts* — whether eight minutes make one argument land, and whether a stranger can rebuild every claimed number with one command. So this appendix entry is not a worked solution but a **model deliverable**: a complete, A-grade slide-by-slide deck outline (seven slides — one title plus the six beats of Ch 8.5 §1 — with speaker notes) plus a completed replication-packet checklist — repo layout and `make`/`run_all` entry point included — for one cast project, followed by **instructor grading notes** that key each piece to the rubric and call out the moves that earn (and lose) points.
 
 The project is **Maya's HMDA fair-lending difference-in-differences** — the staggered DiD she carried from Lab 4 through her Week-7 pre-analysis plan and identification memo into the Week-8 paper: *do state fair-lending examination programs reduce the county-level minority–white gap in mortgage-denial rates?* Her primary estimate is a Callaway–Sant'Anna overall ATT against never- and not-yet-treated controls (Ch 4.2), clustered by state. Every magnitude below is **illustrative** — the figures (an ATT near −1.8 percentage points, a confidence interval, a baseline gap) are presented as a worked *talk* example to show what an A-grade slide says, not as a claimed empirical result; the real number comes out of `make all` on the real pinned HMDA vintage.
 
 ---
 
-## PART A — THE DECK (`paper/slides.pdf`, 8 slides)
+## PART A — THE DECK (`paper/slides.pdf`, 7 slides: 1 title + 6 beats)
 
 Below: each slide's full-sentence title (the one-idea-per-slide title test, PS 8.5 Part 2a), what sits *on* the slide, and the speaker notes that would live in `paper/slides-notes.md`. Read the **titles alone, top to bottom** — they should tell the whole argument:
 
@@ -211,7 +211,7 @@ Maya's analysis has two stochastic steps — the wild-cluster bootstrap on slide
 ### Completed `REPLICATION-CHECKLIST.md`
 
 **The deck**
-- [x] 8 slides, six beats in order (title · question · why · design · headline · robustness · contribution). → `paper/slides.pdf`
+- [x] 7 slides (1 title + 6 beats) in order (title · question · why · design · headline · robustness · contribution). → `paper/slides.pdf`
 - [x] Every title is a full-sentence claim; argument legible from titles alone. → list atop `paper/slides-notes.md`
 - [x] Design slide shows the identifying-assumption sentence (from `memo.md`), not the regression equation.
 - [x] Headline slide: one number + CI, as the event-study **figure**, human-units sentence ("about a fifth of the baseline gap").

@@ -4,7 +4,7 @@
 
 ---
 
-> **⚠️ ILLUSTRATIVE / SYNTHETIC RESULTS — READ FIRST.** Every number in this paper is synthetic. The 8-K text snippets and the returns are *constructed for instruction* in the Week 6 AI co-pilot lab (`nb6.5`), not pulled from live EDGAR filings or CRSP, and the classifier was validated against a 45-document hand-labeled teaching set, not a research-scale corpus. The validation figures (macro-F1 ≈ 0.86, Cohen's κ ≈ 0.80) and the return-reaction figures are **not empirical findings** and must not be cited as facts about real markets. The paper exists to show *the form of a correct argument* — how to validate a text classifier out-of-sample, address training-data leakage, and study a return reaction honestly — not to report a result. Where a real submission would carry a verified citation, an unverifiable one is tagged `[CHECK]`.
+> **ILLUSTRATIVE / SYNTHETIC RESULTS — READ FIRST.** Every number in this paper is synthetic. The 8-K text snippets and the returns are *constructed for instruction* in the Week 6 AI co-pilot lab (`nb6.5`), not pulled from live EDGAR filings or CRSP, and the classifier was validated against a 45-document hand-labeled teaching set, not a research-scale corpus. The validation figures (macro-F1 ≈ 0.86, Cohen's κ ≈ 0.80) and the return-reaction figures are **not empirical findings** and must not be cited as facts about real markets. The paper exists to show *the form of a correct argument* — how to validate a text classifier out-of-sample, address training-data leakage, and study a return reaction honestly — not to report a result. Where a real submission would carry a verified citation, an unverifiable one is tagged `[CHECK]`.
 
 ---
 
@@ -107,7 +107,7 @@ $$
 \kappa = \frac{p_o - p_e}{1 - p_e}.
 $$
 
-κ = 1 is perfect, κ = 0 is chance-level, and κ above roughly 0.8 is conventionally "almost perfect" [CHECK: bands trace to Landis & Koch (1977), *Biometrics*, 33(1), 159–174; verify thresholds]. It is the honest summary of whether the classifier agrees with a human for real reasons or by lucky base rates.
+κ = 1 is perfect, κ = 0 is chance-level, and κ above roughly 0.8 is conventionally "almost perfect" — the Landis & Koch (1977) bands are 0.81–1.00 "almost perfect," 0.61–0.80 "substantial," 0.41–0.60 "moderate," 0.21–0.40 "fair," and below 0.20 "slight" (*Biometrics* 33(1), 159–174). It is the honest summary of whether the classifier agrees with a human for real reasons or by lucky base rates.
 
 **Step 5 — Freeze, then report with uncertainty.** The reported numbers are computed on the held-out test set *once*, after the prompt is frozen against the development set. Because the gold set is small, every metric carries a wide interval, which we obtain by a stratified bootstrap (resample the test set, recompute each metric) and report alongside the point estimate. A precision of 0.83 on a handful of predicted-positives is not the evidence that 0.83 on a thousand is, and the interval says so.
 
@@ -234,9 +234,9 @@ We set out to show, end to end, how to use a text classifier as a *validated mea
 ### References
 
 - Loughran, T., & McDonald, B. (2011). When Is a Liability Not a Liability? Textual Analysis, Dictionaries, and 10-Ks. *Journal of Finance*, 66(1), 35–65.
-- Hoberg, G., & Phillips, G. (2016). Text-Based Network Industries and Endogenous Product Differentiation. *Journal of Political Economy*, 124(5), 1423–1465. `[CHECK: confirm volume/pages]`
-- MacKinlay, A. C. (1997). Event Studies in Economics and Finance. *Journal of Economic Literature*, 35(1), 13–39. `[CHECK: confirm pages]`
-- Landis, J. R., & Koch, G. G. (1977). The Measurement of Observer Agreement for Categorical Data. *Biometrics*, 33(1), 159–174. `[CHECK: confirm κ-band thresholds]`
+- Hoberg, G., & Phillips, G. (2016). Text-Based Network Industries and Endogenous Product Differentiation. *Journal of Political Economy*, 124(5), 1423–1465.
+- MacKinlay, A. C. (1997). Event Studies in Economics and Finance. *Journal of Economic Literature*, 35(1), 13–39.
+- Landis, J. R., & Koch, G. G. (1977). The Measurement of Observer Agreement for Categorical Data. *Biometrics*, 33(1), 159–174.
 
 ---
 ---

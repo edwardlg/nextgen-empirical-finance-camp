@@ -132,7 +132,7 @@ These connect everything above to a published result of mine, so you can see the
 applied to an actual finding rather than a textbook example. The paper is:
 
 > Gao, Han, Li & Zhou (2018), "Market Intraday Momentum," *Journal of Financial Economics*,
-> 129, 394–414.
+> 129(2), 394–414.
 
 The paper studies whether the return over part of the trading day predicts the return over a
 later part of the *same* day — an "intraday momentum" pattern. For these questions, **reason

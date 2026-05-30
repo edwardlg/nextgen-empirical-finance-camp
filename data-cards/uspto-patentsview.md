@@ -1,6 +1,6 @@
-# Data Card — USPTO PatentsView (PatentSearch API)
+# Data Card — USPTO PatentsView (now USPTO Open Data Portal)
 
-**Source slug:** `uspto-patentsview` · Appendix C (Data Dictionary) · last touched 2026-05-28
+**Source slug:** `uspto-patentsview` · Appendix C (Data Dictionary) · last touched 2026-05-30
 
 ## Provider & what it is
 
@@ -14,29 +14,29 @@ Granted U.S. utility patents from **1976 to the present** for the full structure
 
 `patent_id` (the grant number, e.g. `10000000`), `inventor_id` and `assignee_id` (PatentsView's *disambiguated* entity keys — the whole reason to use PatentsView over raw bulk), CPC/USPC technology classification codes, and the citation edge list (`citation_patent_id` → `cited_patent_id`). For finance work the load-bearing join is **assignee → firm**: PatentsView gives you a disambiguated assignee organization name and id, and you must crosswalk that to a Compustat `gvkey` / CRSP `permno` to study firm outcomes (see the companion `nber-patent-link` card — PatentsView does *not* ship a firm-identifier link itself).
 
-## Access path (bulk + PatentSearch API; key via env)
+## Access path (bulk + ODP API; key via env)
 
-**[CHECK] The API changed.** As of this writing the current product is the **PatentSearch API**, base URL `https://search.patentsview.org/api/v1`, and every request requires an `X-Api-Key` header. The **legacy** API (the old `api.patentsview.org/...` query endpoints) was discontinued in **2025** and should not be used in new code. A further migration of PatentsView to the **USPTO Open Data Portal at `data.uspto.gov`** is announced for **2026 [CHECK exact cutover date and whether the search.patentsview.org base URL survives the move]** — pin the base URL in `config.py` so a single edit re-points the whole packet.
+**The API moved — twice in two years.** As of May 2026 the current product is the **USPTO Open Data Portal (ODP)**, base URL `https://api.uspto.gov` (registration and key request at `https://data.uspto.gov/apis/getting-started`), and every request requires an **`X-API-KEY`** header (lowercase header name; the value is the key string). The **legacy** PatentsView API (`api.patentsview.org/...`) was discontinued **May 1, 2025** and now returns HTTP 410 Gone. The intermediate **PatentSearch API** at `https://search.patentsview.org/api/v1` (which used the same `X-Api-Key` header) was paused on **March 20, 2026**, the date PatentsView migrated to ODP; some search functions, visualizations, and support were paused at the cutover and are being reintroduced on ODP "as the transition progresses" (USPTO subscription notice). Pin the base URL and header name in `config.py` so a single edit re-points the whole packet when ODP reintroduces the patent-search endpoint(s).
 
 ```python
 import os, requests
-key = os.environ["PATENTSVIEW_API_KEY"]  # env only; CONVENTIONS §5
-url = "https://search.patentsview.org/api/v1/patent/"
-headers = {"X-Api-Key": key}
-query = {
-    "q": {"_gte": {"patent_date": "2015-01-01"}},
-    "f": ["patent_id", "patent_title", "patent_date",
-          "assignees.assignee_organization"],
-    "o": {"size": 100},
-}
-r = requests.post(url, headers=headers, json=query, timeout=60).json()
+key = os.environ["USPTO_ODP_API_KEY"]      # env only; CONVENTIONS §5
+base = "https://api.uspto.gov"             # ODP; pin in config.py
+headers = {"X-API-KEY": key}               # lowercase header name per ODP docs
+
+# The ODP patent-search endpoint path is being finalized post-cutover [CHECK
+# the current path under `${base}/api/v1/...` against data.uspto.gov when you
+# run]; the bulk PatentsView tables are stable on ODP today.
+r = requests.get(f"{base}/api/v1/patent/applications",
+                 headers=headers, params={"q": "patentNumber:10000001"},
+                 timeout=60)
 ```
 
-For panel-scale work, pull the **bulk data tables** (flat TSV/parquet downloads of patents, inventors, assignees, citations) from the PatentsView download page rather than paginating the API millions of times — the API is for targeted queries, the bulk files are for building the whole panel.
+For panel-scale work, pull the **bulk PatentsView tables** (flat TSV/parquet downloads of patents, inventors, assignees, citations) — they are already available through the ODP "PatentsView Bulk Downloads" page and are the right tool for whole-decade extracts. The API is for targeted queries; bulk files are for building the whole panel.
 
 ## License (FREE / public) & note
 
-PatentsView data are derived from the public U.S. patent record and released for free use; the underlying patent documents are **U.S. Government works in the public domain**, and PatentsView's disambiguated tables are distributed under an open/CC-style attribution license [CHECK exact license string — confirm CC-BY vs. public-domain dedication on the current download page]. Free to redistribute in a replication packet; cite PatentsView (and the disambiguation method paper) as the source of the *disambiguated* ids, not just "USPTO." No GMU-only constraint; the API key is free but rate-limited, so cache and pin a snapshot date.
+PatentsView data are derived from the public U.S. patent record and released for free use; the underlying patent documents are **U.S. Government works in the public domain**, and PatentsView's disambiguated tables are distributed under an open attribution license [CHECK exact license string against the ODP "PatentsView Bulk Downloads" landing page — historically CC-BY, but confirm post-March-2026 ODP terms]. Free to redistribute in a replication packet; cite PatentsView (and the disambiguation method paper) as the source of the *disambiguated* ids, not just "USPTO." No GMU-only constraint; the ODP API key is free but rate-limited, so cache and pin a snapshot date.
 
 ## Gotchas
 
@@ -44,7 +44,7 @@ PatentsView data are derived from the public U.S. patent record and released for
 - **Grant lag.** A patent's *filing* date and its *grant* date can be years apart (commonly 2–4 years, sometimes much longer). If you date innovation by grant date you systematically push it forward in time and truncate recent years (the "right-censoring" / *truncation* problem: recent applications haven't been granted yet, so recent years look artificially low). KPSS-style value measures key off the *grant* announcement for the market reaction but date the *invention* by filing — keep the two dates distinct, and never compute a "patents per year" trend on grant date without correcting for truncation.
 - **Citation truncation.** Forward citations accumulate over time, so newer patents *mechanically* have fewer citations. Comparing raw citation counts across cohorts is the classic apples-to-oranges error; deflate by cohort (or use a fixed citation window).
 - **Assignee ≠ firm, and ownership moves.** The named assignee is the entity at grant; patents get reassigned, subsidiaries file under their own names, and the parent-firm rollup is *your* job (see `nber-patent-link`). Foreign and individual assignees will not match any Compustat firm.
-- **API shape changed with the new platform.** Field names, nesting (`assignees.assignee_organization`), and pagination differ from the legacy API; old tutorials and StackOverflow answers target the dead endpoint.
+- **API shape changed twice.** Field names, nesting (`assignees.assignee_organization`), and pagination differ between the legacy `api.patentsview.org` endpoints (discontinued May 2025), the interim `search.patentsview.org/api/v1` PatentSearch API (paused March 20, 2026), and the current `api.uspto.gov` ODP endpoints. Old tutorials, StackOverflow answers, and even early-2026 blog posts target dead endpoints; confirm against the ODP "Transition Guide" at `data.uspto.gov/support/transition-guide/patentsview` before copying any sample code.
 
 ## "First 10 rows" — schema sketch (ILLUSTRATIVE, not real values)
 

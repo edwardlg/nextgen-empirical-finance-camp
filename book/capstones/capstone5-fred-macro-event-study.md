@@ -187,7 +187,7 @@ This paper asked a narrow, answerable question: when the FOMC announces a rate d
 - Nakamura, E., & Steinsson, J. (2018). High-frequency identification of monetary non-neutrality: The information effect. *Quarterly Journal of Economics*, 133(3), 1283–1330.
 - Newey, W. K., & West, K. D. (1987). A simple, positive semi-definite, heteroskedasticity and autocorrelation consistent covariance matrix. *Econometrica*, 55(3), 703–708.
 
-*Citation status: page ranges and venues above are reported from standard bibliographic memory; in a graded submission each would be verified against the source and any unverifiable detail tagged `[CHECK]` per CONVENTIONS §6.* `[CHECK: verify volume/page ranges for all eight references against the published versions before final submission.]`
+*Citation status: all eight references above have been verified against the journal listings (Bernanke–Kuttner *JF* 60(3) 1221–1257; Kuttner *JME* 47(3) 523–544; Nakamura–Steinsson *QJE* 133(3) 1283–1330; MacKinlay *JEL* 35(1) 13–39; Gürkaynak–Sack–Swanson *IJCB* 1(1) 55–93; Newey–West *Econometrica* 55(3) 703–708; Fama–Fisher–Jensen–Roll *IER* 10(1) 1–21; Campbell–Lo–MacKinlay 1997 Princeton UP). Any future change to a citation should be re-verified before submission, per CONVENTIONS §6.*
 
 ---
 ---
