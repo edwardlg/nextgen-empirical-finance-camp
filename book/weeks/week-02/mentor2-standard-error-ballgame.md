@@ -127,8 +127,8 @@ The first is the paper that turned "which standard error?" from folklore into a 
 The second is one of my own panel studies, offered as a setting where the panel-dependence and
 clustering choices genuinely matter:
 
-> Gao, Han, Kim & Pan (2024), "Common Ownership Along the Supply Chain and Management
-> Disclosure," *Journal of Corporate Finance*.
+> Gao, Han, Kim & Pan (2024), "Overlapping institutional ownership along the supply chain and
+> earnings management of supplier firms," *Journal of Corporate Finance*, 84, 102520.
 
 For all three questions, **reason about method and inference only.** Do not invent or recite
 specific reported magnitudes from either paper — the point is to practice the judgment, not to
@@ -147,9 +147,10 @@ quote results.
    would report in each.
 
 2. **Common ownership along a supply chain — where do the errors hold hands?** Consider a panel
-   study like Gao, Han, Kim & Pan (2024), which relates a firm's *management disclosure* behavior
-   to *common ownership along its supply chain* (shared institutional owners linking a firm to its
-   suppliers and customers). Think carefully about the dependence structure before any number is
+   study like Gao, Han, Kim & Pan (2024), which relates a supplier firm's *earnings management*
+   (the discretionary-accruals slack with which managers shape the reported earnings number) to
+   *overlapping institutional ownership along its supply chain* (shared institutional owners
+   linking a supplier firm to its customers). Think carefully about the dependence structure before any number is
    computed. (a) Name at least two distinct dimensions along which the residuals could plausibly be
    correlated here — and for each, say what economic story makes the errors hold hands (think:
    the same firm observed over many years; firms tied together through a shared owner or a shared

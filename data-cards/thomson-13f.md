@@ -68,6 +68,6 @@ The **filings** are public (EDGAR — cache and share freely). The **cleaned Tho
 (Values invented to show *shape and types*: rows 1 and 4 are two managers holding the **same** CUSIP — the raw ingredient of a common-ownership pair.)
 
 ## Which chapter/lab/capstone uses it
-- **Capstone 2 — Common Ownership from 13F** (TOC): constructing common-ownership measures and a disclosure/competition outcome; ties to **Gao, Han, Kim & Pan (2024)** supply-chain common ownership.
-- **Week 6, Mentor Session 6** — the Gao et al. (2024) common-ownership/disclosure paper anchors the stretch questions.
+- **Capstone 2 — Common Ownership from 13F** (TOC): constructing common-ownership measures and a disclosure/competition outcome (a student-track sibling of the anchor paper's earnings-management outcome); ties to **Gao, Han, Kim & Pan (2024)**, "Overlapping institutional ownership along the supply chain and earnings management of supplier firms," *JCF*, 84:102520.
+- **Week 6, Mentor Session 6** — the Gao et al. (2024) overlapping-ownership / earnings-management paper anchors the stretch questions.
 - **Week 7, Ch 7.2 (§7.2.6)** — 13F is the worked example of "public EDGAR vs. licensed Thomson," the CUSIP-licensing caveat, and the long-only/45-day-lag/confidential-treatment limits.

@@ -119,7 +119,7 @@ error I could not remove?*
 - The thread: AI is a *co-pilot* — it accelerates work you can verify; it is a hazard the moment you let it replace judgment you don't check.
 
 **Slide 5 — Why this is your capstone's integrity section.**
-- I'll walk two of my own papers: one where *disclosure measured from text* is the variable and the panel structure dictates the SEs (*Common Ownership Along the Supply Chain*), and one about using *AI responsibly in finance research and teaching* (*Derivatives Trading Simulation Supported by AI*).
+- I'll walk two of my own papers: one where the outcome — *earnings management of supplier firms* — is itself a **measured construct** (discretionary accruals as a noisy proxy for the unobserved thing the manager is actually doing), and the panel structure dictates the SEs (*Overlapping Institutional Ownership Along the Supply Chain and Earnings Management of Supplier Firms*); and one about using *AI responsibly in finance research and teaching* (*Derivatives Trading Simulation Supported by AI*). The first paper is not text-as-data — but the measurement discipline we built today applies wherever a regression's outcome is a proxy, not a fact.
 - Your capstone must *disclose and defend* every way you used AI: writing aid (you own the words) vs. data generation (labels that enter a regression — these demand a validation table).
 - The responsible-AI-use disclosure is graded: prompt verbatim, gold-set + held-out sizes, OOS precision/recall, model version pinned, calls logged, citations and figures verified against a primary source.
 - The seminar question you'll face in Weeks 7–8: *which text variable would a referee attack first — and can I show its error is small enough not to be driving my result?*
@@ -129,47 +129,61 @@ error I could not remove?*
 ## (d) Three "stretch" questions — measurement and responsible AI in two of my own papers
 
 These tie today's ideas to two of my own papers, offered as live worked cases — one of *measuring and
-validating disclosure from text inside a panel*, and one of *using AI responsibly in research and teaching*:
+validating a behavioral construct (earnings management) inside a panel*, and one of *using AI responsibly
+in research and teaching*:
 
-> Gao, L., Han, J., Kim, J-B., & Pan, T. (2024). Common Ownership Along the Supply Chain and Management
-> Disclosure. *Journal of Corporate Finance*.
+> Gao, L., Han, J., Kim, J-B., & Pan, T. (2024). Overlapping institutional ownership along the supply
+> chain and earnings management of supplier firms. *Journal of Corporate Finance*, 84, 102520.
 >
 > Gao, L., Gopalakrishnan, S., Ehrlich, M., & Wang, C. (forthcoming). Derivatives Trading Simulation
 > Supported by AI. *Journal of Financial Education*.
 
-The first paper asks whether **common ownership along a supply chain** — the situation where the *same*
-institutional investors hold large stakes in both a supplier firm and its customer firm — changes how much
-those firms *voluntarily disclose* to the market (the kind of forward-looking management disclosure, such as
-earnings or sales guidance, that a firm chooses to release rather than is forced to file). The natural unit
-of observation is a firm in a given year, embedded in supplier–customer links, and the key outcome —
-*disclosure* — is largely a **text/measurement** construct, which makes it the perfect case for today.
+The first paper asks whether **overlapping institutional ownership along a supply chain** — the situation
+where the *same* institutional investors hold large stakes in both a supplier firm and its customer firm —
+changes how aggressively the *supplier* firm's managers engage in **earnings management** (the discretionary
+slack in accruals with which managers shape the reported earnings number away from the underlying cash
+reality). The natural unit of observation is a supplier firm in a given year, embedded in supplier–customer
+links, and the key outcome — *earnings management* — is **not directly observable**: it has to be backed out
+of accounting data as a residual from a model of "normal" accruals (Jones / modified-Jones discretionary
+accruals). That makes it a measurement problem of exactly the same shape as today's text problem — a noisy
+proxy for an unseen latent quantity — even though the sensor is an accruals model, not an LLM.
 
 **Reason about measurement, validation, and method only. Do *not* invent or recite specific reported
 magnitudes, coefficients, sample sizes, or t-statistics from either paper — frame every answer as "how I
 would measure / validate / cluster this." Mark anything you would need to confirm as [CHECK].**
 
-1. **Disclosure as a measured proxy — and how I would validate it.** (a) "Management disclosure" is not a
-   number that arrives ready-made; it has to be *constructed* from corporate communications (the count and
-   content of guidance, the tone or readability of what is said). Pick one concrete way you would turn that
-   prose into a variable — for example, a *count* of guidance items, or a *tone/uncertainty* score in the
-   spirit of Loughran–McDonald (Ch 6.3). State, in one sentence, the *true latent quantity* your variable is
-   a proxy for, and then name one *systematic* error and one *random* error that proxy could carry. (b) If
-   you scored disclosure tone with an LLM rather than a word list, describe the **out-of-sample validation**
-   you would run before that score entered any regression: how you would build the gold set, why you would
-   hold out a test set, and which two performance numbers you would report (and why *not* bare accuracy).
-   (c) Why does the *transparency* of the measure matter to a referee here — what can a skeptic check about a
-   published word list that they *cannot* check about an opaque LLM, and what would you have to disclose to
-   close that gap? Mark as [CHECK] anything about the paper's *actual* disclosure measure you would need to
-   confirm against the published version before quoting it.
+1. **Earnings management as a measured proxy — and how I would validate it.** (a) "Earnings management" is
+   not a number that arrives ready-made; it has to be *constructed* from accounting data as the residual of a
+   model that predicts a firm's "normal" accruals from its sales growth and fixed assets — what is left over
+   is labeled *discretionary* accruals and treated as a proxy for managerial intervention. Pick one concrete
+   sensor — the Jones model, the modified-Jones model, or a Dechow–Dichev-style accruals-quality residual —
+   and state, in one sentence, the *true latent quantity* the proxy is meant to capture (the thing in the
+   world, not the formula). Then name one *systematic* error the proxy could carry (e.g., the model's
+   "normal" component is itself misspecified for fast-growing firms, so growth gets relabeled as
+   manipulation) and one *random* error (a single year's noisy accrual blip moves the residual). (b)
+   Validation looks different from text-as-data here because the outcome is continuous, not a binary label —
+   there is no gold set of hand-labeled "yes/no earnings managers." Describe how you would *substitute* for
+   that: simulate a panel in which you *plant* a known amount of discretionary accruals in a known subset of
+   firm-years and check whether your sensor recovers the planted truth (Lab 4's slogan: when you cannot
+   ground-truth in the real world, build a universe where you can); then re-run the sensor under an
+   alternative accruals model and report whether the headline correlation moves materially. Which *two*
+   numbers would you report on the simulation, and why is "the headline regression coefficient is similar
+   across Jones / modified-Jones" the continuous analogue of the precision/recall move you would make on
+   labels? (c) Why does the *transparency* of the measure matter to a referee — what can a skeptic check
+   about an accruals model whose every coefficient is published, that they *cannot* check about an opaque
+   alternative (say, an LLM ranking firms on "earnings-management-y" language), and what would you have to
+   disclose to close that gap if you used the opaque sensor instead? Mark as [CHECK] anything about the
+   paper's *actual* earnings-management measure you would need to confirm against the published version
+   before quoting it.
 
 2. **Panel dependence and clustering — the SE choice the design forces.** This is a panel — the *same* firms
    observed over *many* years, linked into supplier–customer pairs — so the standard-error question from
    Pack 5 (Petersen) is not optional. (a) Using the CONVENTIONS §4 format — *outcome · key regressor ·
-   controls · fixed effects · clustering · sample · identifying assumption in one sentence* — sketch what a
-   disclosure-on-common-ownership specification would look like, *leaving the clustering slot deliberately
-   open*. (b) Now fill that slot and defend it. Residuals for the *same firm* across years are correlated
-   (a firm that discloses a lot this year tends to next year too); residuals may *also* be correlated *across*
-   the linked supplier and customer. Name at least two plausible clustering choices (e.g., by firm, by
+   controls · fixed effects · clustering · sample · identifying assumption in one sentence* — sketch what an
+   earnings-management-on-supply-chain-common-ownership specification would look like, *leaving the
+   clustering slot deliberately open*. (b) Now fill that slot and defend it. Residuals for the *same supplier
+   firm* across years are correlated (a firm that runs high discretionary accruals this year tends to next
+   year too); residuals may *also* be correlated *across* the linked supplier and customer. Name at least two plausible clustering choices (e.g., by firm, by
    supplier–customer pair, by industry, or two-way) and say, in one sentence each, *what dependence each one
    is meant to absorb* — and why getting this wrong tends to make t-statistics look *more* significant than
    they deserve (recall: clustered SEs are usually *larger* than classical ones). (c) Connect it to today's

@@ -245,7 +245,7 @@ LLMs *responsibly* as a research co-pilot.
 - **nb6.5** AI co-pilot lab: **Anthropic Messages API**, **GMU Azure OpenAI** deployment (`${AZURE_OPENAI_KEY}`), local **Ollama / Hopper A100** fallback; RAG over 10-Ks; OOS-validated classification `[~2,600 w / ~36 cells]`
 
 - **Reading Guide Pack 6 + AI Lab Manual:** RAG architecture diagram (prose), prompt-pattern catalog, an evaluation harness for LLM labels (precision/recall vs. hand labels), and a "responsible-use & disclosure" checklist for the capstone. `[~4,000 w]`
-- **Mentor Session 6 (Lei Gao):** *"Text as data, and AI without fooling yourself."* Tied to Gao, Han, Kim & Pan (2024, *JCF*) supply-chain common ownership & disclosure, and Gao et al. (forthcoming) AI trading simulation. Pre-read, 3 warm-ups, 5-slide deck, 3 stretch questions, reflection. `[~2,400 w]`
+- **Mentor Session 6 (Lei Gao):** *"Text as data, and AI without fooling yourself."* Tied to Gao, Han, Kim & Pan (2024, *JCF*, 84:102520) overlapping supply-chain institutional ownership and supplier-firm earnings management (as a measured construct), and Gao et al. (forthcoming) AI trading simulation. Pre-read, 3 warm-ups, 5-slide deck, 3 stretch questions, reflection. `[~2,400 w]`
 - **Assessment W6 + rubric** — build + validate one LLM text classifier with an OOS report; rubric weights validation & honesty. `[~2,400 w]`
 
 **Week 6 subtotal: ~62,000 words** *(guides+AI chapter 20,400 · problems 12,000 · notebooks 9,800 · reading/AI pack 4,000 · mentor 2,400 · assessment 2,400 · narrative 1,500 · overhead/figures prose ~9,500)*
@@ -379,7 +379,7 @@ CRSP · Compustat (Fundamentals Annual/Quarterly) · IBES · Thomson/SEC 13F · 
 > of paper + ~1,000 words of an annotated "how this paper was built" margin commentary.
 
 - **Capstone 1 — Fair Lending on HMDA.** Disparity in mortgage approval/pricing; decomposition + a clean design; ties to Gao & Sun (2019). `[~4,600 w]`
-- **Capstone 2 — Common Ownership from 13F.** Constructing common-ownership measures and a disclosure/competition outcome; ties to Gao, Han, Kim & Pan (2024). `[~4,600 w]`
+- **Capstone 2 — Common Ownership from 13F.** Constructing common-ownership measures and a disclosure/competition outcome (a student-track variant of the anchor paper's earnings-management outcome); ties to Gao, Han, Kim & Pan (2024), *JCF*, 84:102520. `[~4,600 w]`
 - **Capstone 3 — Innovation from USPTO PatentsView.** Patent-based innovation measure and a firm-outcome event study; ties to KPSS (2017). `[~4,400 w]`
 - **Capstone 4 — SEC 8-K Text Classification.** Classifying 8-K events with OOS-validated text models and a return reaction study; AI-module methods. `[~4,600 w]`
 - **Capstone 5 — FRED Macro Event Study.** A monetary/macro-announcement event study with proper inference. `[~4,400 w]`
