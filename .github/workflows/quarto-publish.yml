@@ -51,13 +51,19 @@ jobs:
       # Notebooks are NOT executed on CI (no data, no API keys).
       # _quarto.yml sets `execute.enabled: false` globally; the render
       # below produces static notebook pages from the .ipynb sources.
-      - name: Render Quarto book
+      - name: Render Quarto book -> _site/
         run: quarto render --to html
 
-      - name: Publish to gh-pages
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Deploy _site/ to gh-pages
+        # peaceiris auto-creates the gh-pages branch with force_orphan; this
+        # works on a fresh repo, unlike quarto-actions/publish@v2 which
+        # requires gh-pages to pre-exist (the prior failure mode).
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target: gh-pages
-          path: .
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          commit_message: "Deploy ${{ github.sha }}"
