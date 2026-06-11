@@ -11,7 +11,7 @@
 
 ## 1. What this is
 
-This repository is a publication-quality, self-contained curriculum for an **8-week summer empirical-finance research camp** aimed at top high-school students. It is simultaneously:
+This repository is a publication-quality, self-contained curriculum for a **12-week empirical-finance research camp** aimed at top high-school students — an 8-week instructional core (Weeks 1–8) followed by a 4-week symposium-and-paper arc (Weeks 9–12) that mirrors the live NextGen program's Phase 2 conference week and Phase 3 paper-refinement window. It is simultaneously:
 
 - a **textbook** that rebuilds probability, OLS, and modern causal inference from first principles, using the "reveal-the-trick" pedagogy (state the result, show why it works, show when it fails, show the code);
 - a **lab manual** of hands-on, dataset-driven exercises;
@@ -25,14 +25,14 @@ The camp is hosted by Prof. Lei Gao (Costello College of Business, GMU) and is d
 
 | | |
 |---|---:|
-| Weeks of instruction | 8 |
-| Chapters / reading guides + appendix sections | ~40 |
-| Verified Jupyter notebooks | 40 |
+| Weeks of instruction | 12 |
+| Chapters / reading guides + appendix sections | ~60 |
+| Verified Jupyter notebooks | ~60 |
 | Data cards (Appendix C / `data-cards/`) | ~34 |
 | Appendices | 5 (A–E) |
 | Capstone example papers | 5 |
 | Instructor's-manual modules | 6 |
-| Target length | ~400,000 words |
+| Target length | ~560,000 words |
 
 ---
 
@@ -48,8 +48,10 @@ The camp is hosted by Prof. Lei Gao (Costello College of Business, GMU) and is d
 ├── book/                             All prose.
 │   ├── TOC.md                        The full plan: every chapter, problem set, notebook, lab, mentor session, word budget.
 │   ├── 00-front-matter/              Preface, articulation matrix, how-to-use, prerequisite self-test.
-│   ├── weeks/                        The 8-week arc.
-│   │   ├── week-01/ ... week-08/     Each: README, 5 chapters, 5 problem sets, lab/reading pack, mentor session, assessment.
+│   ├── weeks/                        The 12-week arc.
+│   │   ├── week-01/ ... week-08/     Instructional core: 5 chapters, 5 problem sets, lab/reading pack, mentor session, assessment per week.
+│   │   ├── week-09/                  Symposium week (NextGen Phase 2): conference prep, slide craft, poster design, dry-runs, defense.
+│   │   ├── week-10/ ... week-12/     Paper-refinement arc (NextGen Phase 3): post-conference revision, second-round robustness, journal-style writing, submission packet.
 │   ├── appendices/
 │   │   ├── A-math-toolkit/           Matrix algebra, optimization, asymptotics, distributions reference.
 │   │   ├── B-python-latex-setup/     Conda env, GitHub Classroom, WRDS Cloud, Hopper SLURM, Overleaf/LaTeX.
@@ -60,7 +62,7 @@ The camp is hosted by Prof. Lei Gao (Costello College of Business, GMU) and is d
 │   └── instructor-manual/            Pacing, rubrics, pitfalls, mentor notes, answer keys, equity/access.
 │
 ├── notebooks/                        Runnable companions, one per chapter.
-│   └── week-01/ ... week-08/         40 verified notebooks mirroring the chapters.
+│   └── week-01/ ... week-12/         ~60 verified notebooks mirroring the chapters.
 │
 ├── data-cards/                       ~34 data-source cards (provider, coverage, identifiers, access, license, gotchas).
 │
@@ -73,9 +75,9 @@ The camp is hosted by Prof. Lei Gao (Costello College of Business, GMU) and is d
 
 ---
 
-## 3. The 8-week arc
+## 3. The 12-week arc
 
-Each week contains a week-opening narrative, five chapters, five daily problem sets (solutions in Appendix E), a notebook per chapter with a "Your Turn" extension, a lab manual (Weeks 1–4, 7–8) or paper-reading guides (Weeks 5–6), a 60-minute Lei Gao mentor session, and an end-of-week assessment with rubric.
+Weeks 1–8 form the **instructional core** (NextGen Phase 1 + symposium-prep transition): each week is a week-opening narrative, five chapters, five daily problem sets (solutions in Appendix E), a notebook per chapter with a "Your Turn" extension, a lab manual (Weeks 1–4, 7–8) or paper-reading guides (Weeks 5–6), a 60-minute Lei Gao mentor session, and an end-of-week assessment with rubric. Weeks 9–12 form the **symposium-and-paper arc** (NextGen Phase 2 + Phase 3): one week of conference-presentation prep followed by three weeks of post-conference paper refinement, each with the same chapter/problem-set/notebook/lab/mentor/assessment skeleton retargeted to communication, revision, and submission.
 
 | Week | Theme | Link |
 |---|---|---|
@@ -87,6 +89,10 @@ Each week contains a week-opening narrative, five chapters, five daily problem s
 | 6 | **Reading the frontier II + AI** — text-as-data and modern empirics, plus a module on using LLMs responsibly as a research co-pilot. | [week-06](book/weeks/week-06/README.md) |
 | 7 | **Research project I** — from question to a falsifiable, pre-registered design with data in hand. | [week-07](book/weeks/week-07/README.md) |
 | 8 | **Research project II** — execution, robustness stress-tests, writing to publication standard, and defense. | [week-08](book/weeks/week-08/README.md) |
+| 9 | **Symposium week** — turning the manuscript into a conference talk and poster: framing the contribution, slide craft, poster design, dry-runs, audience-aware Q&A, and the actual symposium day. | [week-09](book/weeks/week-09/README.md) |
+| 10 | **Post-conference revision I** — converting symposium feedback into a structured revision memo; second-round robustness (alternative samples, alternative SEs, Oster δ); rewriting the intro to position the contribution. | [week-10](book/weeks/week-10/README.md) |
+| 11 | **Post-conference revision II** — journal-style writing: lit review that positions rather than lists; tables and figures to publication standard; pre-submission ethics, data-availability, and disclosure statements. | [week-11](book/weeks/week-11/README.md) |
+| 12 | **Submission packet & next steps** — the one-click replication archive; a self-referee report; choosing a venue (Young Scholars Journal, MARS, undergraduate journals, working-paper series); the submission cover letter and the path forward. | [week-12](book/weeks/week-12/README.md) |
 
 See [`book/TOC.md`](book/TOC.md) for the line-by-line plan and word budget.
 
@@ -108,7 +114,7 @@ See [`book/TOC.md`](book/TOC.md) for the line-by-line plan and word budget.
 2. **Wire GitHub Classroom.** See [B.2](book/appendices/B-python-latex-setup/B2-github-classroom.md) for the assignment-repo and submission workflow.
 3. **Provision licensed data on GMU infrastructure.** WRDS Cloud access and querying are covered in [B.3](book/appendices/B-python-latex-setup/B3-wrds-cloud.md); GMU Hopper SLURM templates (batch jobs, A100 GPU for the AI module) in [B.4](book/appendices/B-python-latex-setup/B4-hopper-slurm.md). **Per CONVENTIONS §5, licensed data (CRSP, Compustat, etc.) stays read-only on GMU infrastructure (Hopper / WRDS Cloud) and is never committed to this repo.**
 4. **Configure the AI module keys (Week 6).** Provide credentials via **environment variables only** — `ANTHROPIC_API_KEY` for the Anthropic Messages API and `AZURE_OPENAI_KEY` (with the GMU Azure OpenAI deployment) for the GMU gateway. A **no-key local fallback** runs the same exercises against Ollama / a Hopper A100, so students without keys are never blocked.
-5. **Run the camp.** The [Instructor's Manual](book/instructor-manual/README.md) provides the [pacing guide](book/instructor-manual/IM1-pacing-guide.md) (including how to compress the 8 weeks into NextGen's 7 Friday sessions), [grading rubrics](book/instructor-manual/IM2-grading-rubrics.md), [common pitfalls](book/instructor-manual/IM3-common-pitfalls.md), [guest-lecture/mentor notes](book/instructor-manual/IM4-guest-lectures-mentor-notes.md), [answer keys + anchor work](book/instructor-manual/IM5-answer-keys-anchor-work.md), and [equity/access notes](book/instructor-manual/IM6-equity-access.md).
+5. **Run the camp.** The [Instructor's Manual](book/instructor-manual/README.md) provides the [pacing guide](book/instructor-manual/IM1-pacing-guide.md) (the 12-week clock — instructional core mapped onto NextGen's 7 Friday sessions, symposium week aligned with Phase 2, and the three refinement weeks aligned with Phase 3), [grading rubrics](book/instructor-manual/IM2-grading-rubrics.md), [common pitfalls](book/instructor-manual/IM3-common-pitfalls.md), [guest-lecture/mentor notes](book/instructor-manual/IM4-guest-lectures-mentor-notes.md), [answer keys + anchor work](book/instructor-manual/IM5-answer-keys-anchor-work.md), and [equity/access notes](book/instructor-manual/IM6-equity-access.md).
 
 ---
 
@@ -117,7 +123,7 @@ See [`book/TOC.md`](book/TOC.md) for the line-by-line plan and word budget.
 This project enforces a strict reproducibility discipline, set out in [`CONVENTIONS.md`](CONVENTIONS.md):
 
 - **Pinned environment.** `python=3.11` plus the pinned scientific stack above; every code block must run end-to-end on a fresh conda env.
-- **Notebooks verified headless.** All 40 notebooks are designed to execute non-interactively, with sample output and a "Your Turn" extension.
+- **Notebooks verified headless.** All ~60 notebooks are designed to execute non-interactively, with sample output and a "Your Turn" extension.
 - **Secrets via environment variables only.** No keys are hard-coded; `.env` and `*.key` are git-ignored.
 - **Licensed data never committed.** Data files (`data/`, `*.parquet`, `*.csv`) are git-ignored except the documentation in `data-cards/`; licensed snapshots stay on GMU infrastructure with their snapshot date pinned in the notebook that uses them.
 - **The `[CHECK]` policy.** Unverified citations and live API/endpoint specifics are tagged `[CHECK]` rather than fabricated, so a human can confirm them before publication.

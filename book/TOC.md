@@ -1,5 +1,5 @@
 # Table of Contents — *Empirical Finance from the Ground Up*
-### A Textbook, Lab Manual, and Problem-Set Bank for the GMU 8-Week Empirical-Finance Research Camp
+### A Textbook, Lab Manual, and Problem-Set Bank for the GMU 12-Week Empirical-Finance Research Camp
 
 **Host:** Prof. Lei Gao, Associate Professor of Finance, Costello College of Business, George Mason University
 **Feeds:** NextGen FinTech Scholars / Data Science Young Scholars Research Program (Schar School)
@@ -20,22 +20,25 @@
 |---|------|-------------|-----------|
 | FM-0 | **Title page, copyright, dedication** | GMU / Costello / Schar branding; CC-BY-NC license note | 300 |
 | FM-1 | **Preface** (by Prof. Gao) | Why empirical finance, why high-schoolers can do real research, what the camp feeds into; grounded in verified CV facts | 1,700 |
-| FM-2 | **Articulation Matrix** (Camp ↔ NextGen) | 2-page matrix: 8-week camp vs. the real NextGen program (12 wks, Fri 12–2 EST, Jun 26–Sep 11 2026; CRSP/Compustat/EDGAR/Bloomberg; Claude/ChatGPT; Schar Young Scholars Journal + GMU MARS; awards ≤ $2,000). Shows where the camp **deepens** vs. where NextGen **leads** | 1,600 |
+| FM-2 | **Articulation Matrix** (Camp ↔ NextGen) | 2-page matrix: 12-week camp aligned to the real NextGen program (12 wks, Fri 12–2 EST, Jun 26–Sep 11 2026; CRSP/Compustat/EDGAR/Bloomberg; Claude/ChatGPT; Schar Young Scholars Journal + GMU MARS; awards ≤ $2,000). Phase 1 (Weeks 1–7) ↔ instructional core; Phase 2 (Week 8 of NextGen) ↔ Week 9 symposium; Phase 3 (NextGen Weeks 9–12) ↔ Weeks 10–12 paper refinement | 1,800 |
 | FM-3 | **How to Use This Book** | Daily rhythm; how chapters/problems/notebooks/labs/mentor sessions interlock; the reveal-the-trick structure; the recurring student cast (Maya, Devon, Priya, Sam, Leah) | 1,800 |
 | FM-4 | **Prerequisite Self-Test** | 20 questions (calculus, probability/stats, light Python) + full solutions + routing table ("missed these → read Appendix A/B first") | 4,500 |
 | FM-5 | **Notation & Conventions quick-card** | One-page reproduction of the `CONVENTIONS.md` notation table + spec-discipline checklist | 700 |
-| FM-6 | **Roadmap diagram + dependency graph (prose)** | Narrative walkthrough of the 8-week arc and how skills compound | 900 |
+| FM-6 | **Roadmap diagram + dependency graph (prose)** | Narrative walkthrough of the 12-week arc — Weeks 1–8 instructional core, Week 9 symposium, Weeks 10–12 paper refinement — and how skills compound | 1,100 |
 
-**Front Matter subtotal: ~11,500 words**
+**Front Matter subtotal: ~11,900 words**
 
 ---
 
-# THE 8-WEEK ARC
+# THE 12-WEEK ARC
 
 > Each week contains: (1) a week-opening narrative, (2) **five** chapters, (3) **five** daily problem
 > sets (~6 problems each; solutions in Appendix E), (4) a **notebook per chapter** with a "Your Turn"
-> extension, (5) a lab manual (Weeks 1–4, 7–8) or reading guides (Weeks 5–6), (6) a 60-minute **Lei
-> Gao mentor session**, and (7) an **end-of-week assessment with rubric**.
+> extension, (5) a lab manual (Weeks 1–4, 7–12) or reading guides (Weeks 5–6), (6) a 60-minute **Lei
+> Gao mentor session**, and (7) an **end-of-week assessment with rubric**. Weeks 1–8 are the
+> **instructional core** (NextGen Phase 1 + symposium transition); **Week 9** is the **symposium
+> week** (NextGen Phase 2, ~Aug 14); **Weeks 10–12** are the **paper-refinement arc**
+> (NextGen Phase 3, Aug 21 – Sep 11).
 
 ---
 
@@ -322,6 +325,148 @@ LLMs *responsibly* as a research co-pilot.
 
 ---
 
+## WEEK 9 — Symposium Week: From Manuscript to Conference Talk
+**Theme:** Convert the Week-8 manuscript into a research-symposium talk and poster, dry-run with
+mentors and peers, and present at the live event (aligns with NextGen Phase 2, ~Aug 14, 2026).
+
+- **W9 Opening narrative** — Eight weeks of building, one room of strangers, eight minutes to tell them the truth: what changes when the audience is no longer the grader. `[~1,400 w]`
+
+**Chapters**
+- **Ch 9.1 — Before the Conference: The 72-Hour Pre-Flight.** Slide-freeze SHA, replication-packet `make clean && make all` honesty test, anticipated-questions matrix; the seventy-two hours that decide what the eight minutes feel like. `[~5,200 w]`
+- **Ch 9.2 — The 8-Minute Talk, Decomposed.** The Hook → Design → Identification Punchline → One Picture → Threats → Ask arc; per-slide budgets, cut-lines, table-to-figure conversion; one claim per slide; the contribution that survives compression. `[~5,400 w]`
+- **Ch 9.3 — During the Conference: Three Honest Answers and the Hostile-Question Taxonomy.** "I don't know," "It's in the paper," "Good point" — and what each commits you to; the question-class taxonomy (clarifying / methodological / fatal / off-topic) and the rehearsed 30-second responses. `[~5,000 w]`
+- **Ch 9.4 — The Poster and the Hallway Conversation.** A different medium, a different argument structure, a different success metric: poster as 60-second standalone read; the 90-second elevator pitch; printing logistics and the QR-to-replication. `[~5,200 w]`
+- **Ch 9.5 — After the Conference: The 24-Hour Feedback Ledger and Triage.** Capturing every comment within 24 hours; the cost-value-threat triage rubric; the bridge from Saturday's talk to Monday's revision plan that opens Week 10. `[~4,600 w]`
+
+**Daily Problem Sets** (symposium-prep deliverables; ~6 tasks each)
+- **PS 9.1** A 1-sentence + 1-paragraph contribution statement scored on the rubric `[~2,000 w]`
+- **PS 9.2** First-draft 8-slide deck against the slide-grammar checklist `[~2,300 w]`
+- **PS 9.3** Conference poster (PDF) and the standalone-read self-test `[~2,200 w]`
+- **PS 9.4** A peer Q&A drill: write 6 anticipated questions + rehearsed 30-second answers `[~2,200 w]`
+- **PS 9.5** A structured post-symposium reflection memo `[~2,000 w]`
+
+**Notebooks**
+- **nb9.1** Slide-timing simulator: per-slide rehearsal stopwatch with cut-line markers and a 30-trial timing-variance distribution `[~1,600 w / ~22 cells]`
+- **nb9.2** Anticipated-questions matrix builder: join the Ch 7.5 threats table to a survivable/fatal classifier and emit a 20-row Q&A flashcard deck `[~1,700 w / ~24 cells]`
+- **nb9.3** One-figure test: turn the paper's Table 1 + Figure 1 into a single talk-grade figure (large fonts, fewer rows, color-blind palette) `[~1,700 w / ~24 cells]`
+- **nb9.4** Poster-layout engine: matplotlib figure-grid + headline-band poster export to print-ready PDF `[~1,500 w / ~20 cells]`
+- **nb9.5** Feedback ledger + triage emitter: CSV of every comment → R&R-style task board that becomes the Week 10 input `[~1,500 w / ~20 cells]`
+
+- **Lab 9 (Lab Manual): "Conference Day, End-to-End."** Full dress rehearsal: 72-hour pre-flight checklist → timed 8-minute talk → adversarial Q&A → poster session → 24-hour feedback ledger; recorded and reviewed against the rubric. `[~4,400 w]`
+- **Mentor Session 9 (Lei Gao):** *"What I tell my students the night before they present."* Tied to Gao & Sun (2019, *PNAS*, 116(19):9293–9302) fair-lending — what changes when the room is policy (HUD / Federal Reserve / Congress) instead of academic. Pre-read, 3 warm-ups, 5-slide deck, 3 stretch questions, reflection. `[~2,200 w]`
+- **Assessment W9 + rubric** — the symposium talk + poster, graded on the presentation rubric (contribution clarity, slide discipline, identification defense under Q&A, poster as standalone). `[~2,200 w]`
+
+**Week 9 subtotal: ~56,500 words** *(chapters 25,400 · problems 10,700 · notebooks 8,000 · lab 4,400 · mentor 2,200 · assessment 2,200 · narrative 1,400 · overhead/figures prose ~2,200)*
+
+---
+
+## WEEK 10 — Post-Conference Revision I: From Feedback to a Better Paper
+**Theme:** Convert symposium feedback into a structured revision plan and a second-round robustness
+battery; rewrite the introduction to position the contribution correctly (aligns with NextGen
+Phase 3 Week 1, Aug 21, 2026).
+
+- **W10 Opening narrative** — A finding that survived a hostile room is not yet a finding that will survive a referee: the next four weeks are when the paper grows up. `[~1,500 w]`
+
+**Chapters**
+- **Ch 10.1 — Triaging Conference Feedback with the Cost–Value–Threat-to-Identification 3×3.** Sorting every Saturday comment on three axes (cost to address, value if addressed, threat-to-identification if ignored); the kill-list vs. the defer-list; when feedback says "redesign" and when it says "rewrite a paragraph." `[~5,400 w]`
+- **Ch 10.2 — Multiple Testing Done Right: Bonferroni, Holm, BH-FDR, Romano–Wolf.** Why "we ran 14 robustness checks" is itself a multiple-testing problem; family-wise error rate vs. false-discovery rate; the Romano–Wolf step-down procedure; what to pre-specify and what to disclose. `[~5,800 w]`
+- **Ch 10.3 — Heterogeneous Treatment Effects: CATE, Causal Forests, and Pre-Registration.** From ATE to CATE; honest causal forests (Athey–Wager); the danger of *p*-hacking via subgroups; how a Week-7 PAP constrains what you can claim post-conference. `[~6,200 w]`
+- **Ch 10.4 — Mechanism Analysis Without Bad Controls: Acharya–Blackwell–Sen Mediation.** Why "include the mechanism as a control" is wrong; the Acharya–Blackwell–Sen sequential-*g* approach; when you can credibly decompose a total effect into direct + mediated. `[~5,400 w]`
+- **Ch 10.5 — External Validity and Transportability: Would This Replicate in 2030?** The Pearl–Bareinboim transportability framework; the "out-of-sample by design" mindset; the honest external-validity paragraph that should close every paper. `[~4,800 w]`
+
+**Daily Problem Sets** (revision-production deliverables)
+- **PS 10.1** Feedback triage matrix: every comment scored on cost × value × threat-to-identification, with a defended kill-list and defer-list `[~2,200 w]`
+- **PS 10.2** Romano–Wolf step-down on your robustness battery + a multiple-testing disclosure paragraph `[~2,300 w]`
+- **PS 10.3** A pre-registered CATE / heterogeneous-effects analysis on your data, with the honest subgroup-found-after-the-fact disclosure `[~2,500 w]`
+- **PS 10.4** Mediation analysis with the Acharya–Blackwell–Sen sequential-*g* approach + a "bad-controls" critique of a naive alternative `[~2,300 w]`
+- **PS 10.5** A one-page external-validity / transportability paragraph for your paper `[~2,000 w]`
+
+**Notebooks**
+- **nb10.1** Romano–Wolf step-down procedure (paired with a Bonferroni / Holm / BH-FDR comparison harness) `[~1,800 w / ~26 cells]`
+- **nb10.2** Causal forest on synthetic data: `econml`/`grf`-style honest forest with CATE plots and the over-fitting diagnostic `[~1,800 w / ~26 cells]`
+- **nb10.3** Mediation done right: Acharya–Blackwell–Sen sequential-*g* on a worked example, contrasted with the bad-control naive approach `[~1,700 w / ~24 cells]`
+- **nb10.4** Oster δ and Altonji–Elder–Taber bounds: selection-on-unobservables that survives a referee `[~1,500 w / ~20 cells]`
+- **nb10.5** Transportability audit: a Pearl–Bareinboim diagram + the "would this replicate in 2030?" simulator `[~1,500 w / ~20 cells]`
+
+- **Lab 10 (Lab Manual): "Robustness Battery v2."** End-to-end second-round robustness: run Romano–Wolf, a causal-forest CATE analysis, sequential-*g* mediation, Oster δ, and a transportability audit on the student's own paper; assemble the multiple-testing-honest robustness section and the deviations-from-PAP log. `[~4,400 w]`
+- **Mentor Session 10 (Lei Gao):** *"How referees read heterogeneity."* Tied to Deng, Gao & Kim (2020, *JCF*, 60:101498) short-sale natural-experiment paper, with a walk-through of how the heterogeneity section was sharpened during peer review. Pre-read, 3 warm-ups, 5-slide deck, 3 stretch questions, reflection. `[~2,300 w]`
+- **Assessment W10 + rubric** — the revision memo + the rewritten introduction, graded on the revision rubric (coverage of comments, honesty, gain-on-paper). `[~2,300 w]`
+
+**Week 10 subtotal: ~58,500 words** *(chapters 26,800 · problems 11,300 · notebooks 7,900 · lab 4,400 · mentor 2,300 · assessment 2,300 · narrative 1,500 · overhead/figures prose ~2,000)*
+
+---
+
+## WEEK 11 — Post-Conference Revision II: Journal-Style Writing and Publication-Quality Craft
+**Theme:** Turn the revised draft into a journal-style manuscript: a literature section that
+positions, tables and figures to publication standard, and the ethics/data-availability scaffolding
+a real journal expects (aligns with NextGen Phase 3 Week 2, Aug 28, 2026).
+
+- **W11 Opening narrative** — There is a moment when a student paper becomes a paper, and it is almost always the moment the lit review stops being a list. `[~1,500 w]`
+
+**Chapters**
+- **Ch 11.1 — The 250-Word Abstract and the Five-Sentence Skeleton.** The empirical-finance abstract grammar: (1) what we study, (2) how we identify it, (3) what we find, (4) why it matters, (5) what's new; word-budget enforcement; the abstract as the only paragraph 90% of readers will read. `[~5,000 w]`
+- **Ch 11.2 — Publication-Grade Tables: `pyfixest`/`etable`, Stars Discipline, Panel Structure.** From regression output to JF/JFE/RFS house-style tables; stars discipline (no \*\*\* at 10%); panel A / panel B structure; what goes in the table notes; the "every cell defensible at a referee meeting" test. `[~5,600 w]`
+- **Ch 11.3 — Publication-Grade Figures: Event-Study, Specification Curve, Heterogeneity Forest.** Three figure types that carry empirical finance papers; CI bands done correctly; color-blind palettes and print-safe choices; captions that read as mini-results-paragraphs. `[~5,400 w]`
+- **Ch 11.4 — The Introduction Rewrite: Five-Paragraph Structure and How to Diagnose a Sick Intro.** The puzzle / design / result / contribution / roadmap arc; the diagnostic checklist for an intro that is doing too much, too little, or the wrong job; cutting throat-clearing; the one-sentence contribution restated three ways. `[~5,400 w]`
+- **Ch 11.5 — The Expanded Literature Review: From Bullet List to Three-Strand Argument.** The "three conversations" structure — your paper joins which conversation, against which papers, contributing what; how to cite without summarizing; what to do when the closest paper is yours-but-better. `[~5,000 w]`
+
+**Daily Problem Sets** (publication-quality deliverables)
+- **PS 11.1** A 250-word abstract built from the five-sentence skeleton + a 50-word "ultra-abstract" `[~2,000 w]`
+- **PS 11.2** Two publication-quality `etable` regression tables (LaTeX) with the disclosure footnote `[~2,300 w]`
+- **PS 11.3** Three publication-quality figures — event-study, specification curve, heterogeneity forest — with print-safe captions `[~2,400 w]`
+- **PS 11.4** Rewritten introduction against the five-paragraph diagnostic + a before/after side-by-side `[~2,400 w]`
+- **PS 11.5** Expanded lit section as a three-strand argument with a citation-graph appendix `[~2,300 w]`
+
+**Notebooks**
+- **nb11.1** Abstract builder: a structured-prompt harness + a 250-word counter + a five-sentence-skeleton linter `[~1,500 w / ~20 cells]`
+- **nb11.2** `etable` camera-ready: `pyfixest` → LaTeX with the JF/JFE house-style template and panel A/B support `[~1,800 w / ~26 cells]`
+- **nb11.3** Event-study twelve ways: the same data, twelve plotting choices, the one defensible chart `[~1,800 w / ~26 cells]`
+- **nb11.4** Intro diagnostic: a structured prose-linter (throat-clearing, hedge-then-overclaim, verb audit) `[~1,500 w / ~20 cells]`
+- **nb11.5** Lit-review network: OpenAlex/Semantic-Scholar citation-graph builder + the three-conversations clusterer `[~1,500 w / ~20 cells]`
+
+- **Lab 11 (Lab Manual): "Manuscript Build."** Compile the full manuscript in the AEA LaTeX template — abstract, rewritten intro, expanded lit, publication-grade tables and figures, disclosure statements; cross-check with a peer on the abstract and intro; produce a press-ready PDF. `[~4,400 w]`
+- **Mentor Session 11 (Lei Gao):** *"Earning space in a crowded field."* Tied to Elnahas, Gao, Hossain & Kim (2024, *JFQA*, 59(8):3671–3707) — how a disclosure-quality measure becomes a credible main result and how the intro had to position it against a crowded prior literature. Pre-read, 3 warm-ups, 5-slide deck, 3 stretch questions, reflection. `[~2,300 w]`
+- **Assessment W11 + rubric** — the press-ready manuscript + the AEA-style code/data appendix, graded on the publication-craft rubric (lit positioning, table/figure quality, disclosure completeness, prose discipline). `[~2,300 w]`
+
+**Week 11 subtotal: ~58,000 words** *(chapters 25,800 · problems 11,200 · notebooks 8,100 · lab 4,400 · mentor 2,300 · assessment 2,300 · narrative 1,500 · overhead/figures prose ~2,400)*
+
+---
+
+## WEEK 12 — Submission Packet, Self-Referee, and Next Steps
+**Theme:** Assemble a one-click replication archive, write a self-referee report, choose a venue,
+and submit (aligns with NextGen Phase 3 Weeks 3–4, Sep 4 – Sep 11, 2026).
+
+- **W12 Opening narrative** — The last act of the camp is the one that decides whether any of it survives the year: the click that turns a project into a record. `[~1,500 w]`
+
+**Chapters**
+- **Ch 12.1 — Submitting to the Schar Young Scholars Journal and the GMU MARS Repository.** The realistic first venue for a strong high-school empirical-finance paper: Schar Young Scholars Journal submission portal, formatting requirements, the GMU MARS undergraduate-research repository deposit, ORCID and DOI setup. `[~5,000 w]`
+- **Ch 12.2 — The SSRN Preprint: Posting Decisions, Versioning, and the DOI Question.** SSRN as the working-paper standard in finance; when to post vs. when to wait; SSRN abstract-ID vs. DOI; versioning policy (v1 / v2 / v3); the SSRN download-count temptation and what it actually measures. `[~4,800 w]`
+- **Ch 12.3 — From Poster to *Journal of Finance*: The Decade-Long Arc of a Paper.** The realistic timeline (NBER WP → conference → top-five journal R&R → published) using a real Gao paper as the case study; what high-school work realistically achieves *now* and what it makes possible *later*. `[~5,000 w]`
+- **Ch 12.4 — The Conference Circuit: FMA Undergraduate Poster, AEA Pipeline, SFS Cavalcade.** The conferences that matter for emerging finance researchers; the FMA undergraduate poster session as a credible target; the AEA continuing-education pipeline; SFS Cavalcade as a long-term goal; submission deadlines and how to read a call-for-papers. `[~4,800 w]`
+- **Ch 12.5 — What Comes After Submission: The Reviewer Wait, the Desk Reject, the R&R.** The post-submission rules of engagement (don't ping the editor); reading a desk-reject letter without taking it personally; the R&R as the actual start of the paper; the "what I would do differently next time" memo. `[~5,000 w]`
+
+**Daily Problem Sets** (submission-packet deliverables)
+- **PS 12.1** A Schar Young Scholars Journal submission packet + the MARS repository deposit form `[~2,200 w]`
+- **PS 12.2** An SSRN preprint draft (abstract, JEL codes, keywords) + a versioning-policy statement `[~2,100 w]`
+- **PS 12.3** A "decade-arc map" applied to your own paper: where it is today, the realistic next two venues, and the long shot `[~2,000 w]`
+- **PS 12.4** A populated conference-submission calendar for the next 12 months (FMA / SFS / AEA / regionals) `[~2,000 w]`
+- **PS 12.5** A "five-year research identity" memo: which two questions you would still want to answer in 2030 `[~2,200 w]`
+
+**Notebooks**
+- **nb12.1** Submission-packet builder: one-click `make all` rebuild on a clean conda env + a MANIFEST mapping every table/figure to its producing script `[~1,800 w / ~26 cells]`
+- **nb12.2** SSRN metadata generator: abstract, JEL codes, keywords, suggested-reader emails — packaged for the SSRN portal `[~1,500 w / ~20 cells]`
+- **nb12.3** MARS repository schema: a structured-metadata builder that maps the paper's bibliography, datasets, and replication archive to the MARS deposit schema `[~1,500 w / ~20 cells]`
+- **nb12.4** Conference calendar engine: a year-ahead deadline-tracker for FMA / SFS / AEA / regional finance conferences with submission-cost and acceptance-rate priors `[~1,500 w / ~20 cells]`
+- **nb12.5** Five-year research-identity map: an interactive concept-graph of the questions adjacent to the student's paper, with a defensibility score for each next-paper candidate `[~1,500 w / ~20 cells]`
+
+- **Lab 12 (Lab Manual): "Submission Day."** End-to-end submission protocol: clean-machine rebuild verified by a peer; SSRN preprint posted; Schar Young Scholars Journal portal submission completed; MARS deposit submitted; conference-calendar populated; 5-minute "what I learned" exit talk recorded. `[~4,400 w]`
+- **Mentor Session 12 (Lei Gao):** *"The decade arc of a paper in the JF pipeline."* Tied to *Rainbow of Credits* (Gao, Liu & Wang, AEA 2025, target *Journal of Finance*) — a paper currently mid-pipeline — and Gao, Gopalakrishnan, Ehrlich & Wang (forthcoming, *Journal of Financial Education*) AI trading simulation. Two papers at different stops on the same publication road. Pre-read, 3 warm-ups, 5-slide deck, 3 stretch questions, reflection. `[~2,300 w]`
+- **Assessment W12 + rubric** — the submission packet (manuscript + replication + cover letter + self-referee) graded on the **terminal program rubric**; this is the camp's exit credential. `[~2,800 w]`
+
+**Week 12 subtotal: ~57,500 words** *(chapters 24,600 · problems 10,900 · notebooks 7,800 · lab 4,400 · mentor 2,300 · assessment 2,800 · narrative 1,500 · overhead/figures prose ~3,200)*
+
+---
+
 # APPENDICES
 
 ## Appendix A — Math Toolkit (just enough)
@@ -358,19 +503,23 @@ CRSP · Compustat (Fundamentals Annual/Quarterly) · IBES · Thomson/SEC 13F · 
 **Appendix D subtotal: ~13,000 words**
 
 ## Appendix E — Solutions Manual (every problem fully worked)
-> 8 weeks × 5 problem sets × ~6 problems = ~240 problems, each with a complete worked solution
+> 12 weeks × 5 problem sets × ~6 problems = ~360 problems, each with a complete worked solution
 > (derivation, code where relevant, interpretation). Counted separately from the problem statements
 > above (those counts were statement + solution as a pair); this appendix is the canonical home of the
-> full worked solutions, organized by week.
+> full worked solutions, organized by week. Weeks 9–12 solutions are deliverable-shaped (decks,
+> memos, manuscripts, packets) rather than purely analytic, so the per-week wordcount is somewhat
+> lower despite identical problem-count.
 
 - Solutions, Weeks 1–2 `[~14,000 w]`
 - Solutions, Weeks 3–4 `[~15,500 w]`
 - Solutions, Weeks 5–6 `[~14,000 w]`
 - Solutions, Weeks 7–8 `[~13,500 w]`
+- Solutions, Weeks 9–10 `[~12,000 w]`
+- Solutions, Weeks 11–12 `[~12,000 w]`
 
-**Appendix E subtotal: ~57,000 words**
+**Appendix E subtotal: ~81,000 words**
 
-**Appendices total: ~124,700 words**
+**Appendices total: ~148,700 words**
 
 ---
 
@@ -389,14 +538,14 @@ CRSP · Compustat (Fundamentals Annual/Quarterly) · IBES · Thomson/SEC 13F · 
 ---
 
 # INSTRUCTOR'S MANUAL (separate document)
-- **IM-1** Pacing guide: the 8-week clock, daily blocks, how to compress to NextGen's 7 Friday sessions. `[~3,200 w]`
-- **IM-2** Grading rubrics (consolidated): problem sets, assessments, capstone paper, presentation. `[~3,400 w]`
-- **IM-3** Common student pitfalls, by week, with diagnostic questions and fixes. `[~3,600 w]`
-- **IM-4** Suggested guest lectures & how to slot them; mentor-session facilitation notes. `[~2,400 w]`
-- **IM-5** Answer keys to assessments + sample graded work (anchor papers for the rubric). `[~3,400 w]`
-- **IM-6** Equity/access notes: WRDS seats, compute, accommodations; data-licensing compliance. `[~2,000 w]`
+- **IM-1** Pacing guide: the 12-week clock — Weeks 1–8 instructional core mapped onto NextGen's 7 Friday Phase-1 sessions plus a transition week, Week 9 ↔ NextGen Phase 2 symposium, Weeks 10–12 ↔ NextGen Phase 3 paper refinement. `[~3,800 w]`
+- **IM-2** Grading rubrics (consolidated): problem sets, assessments, capstone paper, presentation, symposium talk + poster, revision memo, submission packet. `[~4,000 w]`
+- **IM-3** Common student pitfalls, by week, with diagnostic questions and fixes (including the symposium/revision-phase pitfalls — over-defensive Q&A, scope-creep robustness, intro that re-promises rather than positions). `[~4,200 w]`
+- **IM-4** Suggested guest lectures & how to slot them; mentor-session facilitation notes (Weeks 1–12). `[~2,600 w]`
+- **IM-5** Answer keys to assessments + sample graded work (anchor papers for the rubric). `[~3,800 w]`
+- **IM-6** Equity/access notes: WRDS seats, compute, accommodations; data-licensing compliance; symposium-day accessibility and travel/honorarium policy. `[~2,200 w]`
 
-**Instructor's Manual subtotal: ~18,000 words**
+**Instructor's Manual subtotal: ~20,600 words**
 
 ---
 
@@ -404,7 +553,7 @@ CRSP · Compustat (Fundamentals Annual/Quarterly) · IBES · Thomson/SEC 13F · 
 
 | Section | Est. words |
 |---|---:|
-| Front Matter | 11,500 |
+| Front Matter | 11,900 |
 | Week 1 — Probability, Sampling, Inference | 62,000 |
 | Week 2 — The OLS Engine | 68,000 |
 | Week 3 — Causal Inference I (PO, matching, IV) | 70,000 |
@@ -413,38 +562,44 @@ CRSP · Compustat (Fundamentals Annual/Quarterly) · IBES · Thomson/SEC 13F · 
 | Week 6 — Reading the Frontier II + AI Co-Pilot | 62,000 |
 | Week 7 — Research Project I (question → PAP) | 60,000 |
 | Week 8 — Research Project II (execution → defense) | 61,000 |
+| Week 9 — Symposium Week (talk + poster + defense) | 56,500 |
+| Week 10 — Post-Conference Revision I (feedback → memo + robustness) | 58,500 |
+| Week 11 — Post-Conference Revision II (journal-style craft) | 58,000 |
+| Week 12 — Submission Packet, Self-Referee, Next Steps | 57,500 |
 | Appendix A — Math Toolkit | 14,500 |
 | Appendix B — Python + LaTeX Setup | 13,200 |
 | Appendix C — Data Dictionary (~33 cards) | 27,000 |
 | Appendix D — Style Guide | 13,000 |
-| Appendix E — Solutions Manual | 57,000 |
+| Appendix E — Solutions Manual | 81,000 |
 | Capstone Gallery (5 papers) | 22,600 |
-| Instructor's Manual | 18,000 |
-| **GRAND TOTAL** | **~690,800** |
+| Instructor's Manual | 20,600 |
+| **GRAND TOTAL** | **~948,300** |
 
-> **Word-budget note.** The line-item estimates above sum to ~690,800 words — above the
-> **300,000–500,000** target. This TOC is intentionally the *maximal* plan so no deliverable is
-> dropped. The published target is hit by treating the **per-chapter prose floor (≈4,000 w)** rather
-> than the ceiling, trimming notebook narration to code-comment level, and consolidating solutions, as
-> follows. **Authoritative budget to write to:**
+> **Word-budget note.** The line-item estimates above sum to ~948,300 words — above the
+> revised **400,000–700,000** target band for a 12-week curriculum. This TOC is intentionally the
+> *maximal* plan so no deliverable is dropped. The published target is hit by treating the
+> **per-chapter prose floor (≈4,000 w)** rather than the ceiling, trimming notebook narration to
+> code-comment level, and consolidating solutions, as follows. **Authoritative budget to write to:**
 >
 > | Section | Target words |
 > |---|---:|
-> | Front Matter | 10,000 |
+> | Front Matter | 10,500 |
 > | Weeks 1–8 (8 × ~33,000 avg) | 264,000 |
+> | Weeks 9–12 (4 × ~30,000 avg) | 120,000 |
 > | Appendices A–D | 55,000 |
-> | Appendix E (Solutions) | 40,000 |
+> | Appendix E (Solutions, Weeks 1–12) | 60,000 |
 > | Capstone Gallery | 18,000 |
-> | Instructor's Manual | 13,000 |
-> | **PUBLISHED GRAND TOTAL** | **~400,000** |
+> | Instructor's Manual | 16,000 |
+> | **PUBLISHED GRAND TOTAL** | **~560,000** |
 >
-> **The book is written to ~400,000 words**, squarely inside the 300k–500k range. Each week is
-> budgeted at ~33,000 words: 5 chapters at the ~4,000–5,500 w range (technical Weeks 2–4 at the high
-> end, reading Weeks 5–6 leaner per-guide), 5 problem sets at ~1,800 w each (statement only; full
-> solutions consolidated in Appendix E at ~40,000 w total), 5 notebooks at ~1,200 w narration each,
-> one lab/reading pack (~3,500 w), one mentor session (~2,000 w), one assessment (~1,800 w), and the
-> opening narrative (~1,300 w). Writing slices MUST hit the **target** column; the maximal column is a
-> ceiling, not a quota.
+> **The book is written to ~560,000 words.** Weeks 1–8 are budgeted at ~33,000 words each (5 chapters
+> at 4,000–5,500 w, 5 problem sets at ~1,800 w each, 5 notebooks at ~1,200 w narration each, one
+> lab/reading pack ~3,500 w, mentor session ~2,000 w, assessment ~1,800 w, opening narrative
+> ~1,300 w). Weeks 9–12 are budgeted at ~30,000 words each because the deliverables (decks, posters,
+> memos, packets) are shorter-form than analytic chapters — 5 chapters at ~4,500 w, 5 problem sets at
+> ~1,800 w, 5 notebooks at ~1,200 w narration, one lab ~3,500 w, mentor ~2,000 w, assessment
+> ~2,000 w, narrative ~1,400 w. Writing slices MUST hit the **target** column; the maximal column is
+> a ceiling, not a quota.
 
 ---
 

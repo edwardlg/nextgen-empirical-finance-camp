@@ -1,8 +1,8 @@
 # Appendix E — Solutions Manual
 
-This appendix works every problem set in the camp, all eight weeks of it. A solution here is not an answer key: it is the full path from the problem to the number. Where a result needs proving, you get the derivation — intuition first, then a worked numerical case, then the algebra, in the order CONVENTIONS asks for. Where a result needs computing, you get the runnable code that produces it. And every solution closes the loop with interpretation: what the number means for the question that motivated the problem, and where the method would break if you pushed it.
+This appendix works every problem set in the camp, all twelve weeks of it. A solution here is not an answer key: it is the full path from the problem to the number. Where a result needs proving, you get the derivation — intuition first, then a worked numerical case, then the algebra, in the order CONVENTIONS asks for. Where a result needs computing, you get the runnable code that produces it. And every solution closes the loop with interpretation: what the number means for the question that motivated the problem, and where the method would break if you pushed it.
 
-Weeks 1–6 are **numeric drills**. The questions have right answers, and the solutions reach them by hand and in code so you can check both your arithmetic and your reasoning. Weeks 7–8 are different: those problem sets scaffold your own research project (a question, a data pull, a pre-analysis plan, a robustness battery, a deck), so they have no single right answer. For those, the manual gives **A-grade model deliverables** — one fully worked exemplar per assignment, built on the chapter's running student-cast example, so you can see the shape and discipline of "done well" before you build your own. The numbers in those exemplars are illustrative teaching figures, never real licensed-data output, and they are labeled as such inside each file.
+Weeks 1–6 are **numeric drills**. The questions have right answers, and the solutions reach them by hand and in code so you can check both your arithmetic and your reasoning. Weeks 7–12 are different: those problem sets scaffold your own research project across its full life — question, data pull, pre-analysis plan, robustness battery, deck (Weeks 7–8); conference presentation and feedback intake (Week 9); paper refinement with multiple-testing, heterogeneity, mechanism, and external-validity discipline (Week 10); manuscript writing (Week 11); and submission, archiving, and the long arc to a published paper (Week 12). They have no single right answer. For those, the manual gives **A-grade model deliverables** — one fully worked exemplar per assignment, built on the chapter's running student-cast example, so you can see the shape and discipline of "done well" before you build your own. The numbers in those exemplars are illustrative teaching figures, never real licensed-data output, and they are labeled as such inside each file.
 
 **How to use this.** Try the problem first. Sit with it, get stuck, write down a wrong answer — then read the solution. A worked solution you read before attempting the problem teaches you almost nothing; the same solution read after a genuine attempt is where the learning happens. If your number disagrees with ours, find out why before you move on: the disagreement is usually the most instructive thing on the page.
 
@@ -77,3 +77,35 @@ All solutions follow the notation in [`CONVENTIONS.md`](../../../CONVENTIONS.md)
 - [PS 8.3](E-w8-ps8.3-solutions.md) — An A-grade introduction and headline-first results excerpt.
 - [PS 8.4](E-w8-ps8.4-solutions.md) — A referee report and revise-and-resubmit memo.
 - [PS 8.5](E-w8-ps8.5-solutions.md) — An eight-minute deck and one-click replication packet.
+
+### Week 9 — The conference: presenting, defending, listening *(project deliverables — model exemplars)*
+
+- [PS 9.1](E-w9-ps9.1-solutions.md) — The 72-hour pre-flight checklist, executed on a capstone deck and packet.
+- [PS 9.2](E-w9-ps9.2-solutions.md) — An anticipated-questions matrix mapped to slides and backup slides.
+- [PS 9.3](E-w9-ps9.3-solutions.md) — The one-figure defense — the single visual that carries identification.
+- [PS 9.4](E-w9-ps9.4-solutions.md) — The matplotlib-built 48×36 poster version of the paper.
+- [PS 9.5](E-w9-ps9.5-solutions.md) — The post-conference feedback ledger and 48-hour triage memo.
+
+### Week 10 — Paper refinement: triage, multiple testing, heterogeneity, mechanism, external validity *(mixed numeric + project deliverables)*
+
+- [PS 10.1](E-w10-ps10.1-solutions.md) — The cost / value / threat 3×3 applied to the feedback ledger, plus a four-week revision plan.
+- [PS 10.2](E-w10-ps10.2-solutions.md) — Romano-Wolf step-down on the paper's heterogeneity tables; family-wise adjusted p-values.
+- [PS 10.3](E-w10-ps10.3-solutions.md) — One pre-registered CATE via causal forest, with the honest best-linear-projection diagnostic.
+- [PS 10.4](E-w10-ps10.4-solutions.md) — A mechanism section: one honest mediator with the bad-controls DAG audit.
+- [PS 10.5](E-w10-ps10.5-solutions.md) — An external-validity memo: sample, target, transport error, and bounds.
+
+### Week 11 — Writing the manuscript: abstract, tables, figures, intro, literature *(project deliverables — model exemplars)*
+
+- [PS 11.1](E-w11-ps11.1-solutions.md) — Three sub-250-word abstracts, each a different lead on the five-sentence skeleton.
+- [PS 11.2](E-w11-ps11.2-solutions.md) — A camera-ready main results table via `pyfixest` `etable()`, with the one-glance-test memo.
+- [PS 11.3](E-w11-ps11.3-solutions.md) — The main figure rendered twelve ways, with the selection-justification memo.
+- [PS 11.4](E-w11-ps11.4-solutions.md) — A five-paragraph (~1500-word) introduction rewrite with tracked changes against the Week-8 draft.
+- [PS 11.5](E-w11-ps11.5-solutions.md) — An expanded (~2500-word) literature review organized as three strands with a contribution reveal.
+
+### Week 12 — Submission, archiving, and the long arc *(project deliverables — model exemplars)*
+
+- [PS 12.1](E-w12-ps12.1-solutions.md) — The complete Schar Young Scholars submission packet — PDF, zip, manifest, cover letter.
+- [PS 12.2](E-w12-ps12.2-solutions.md) — The SSRN preprint draft with JEL codes, keywords, and a versioning plan.
+- [PS 12.3](E-w12-ps12.3-solutions.md) — The MARS repository deposit with validated metadata and a reproducibility walkthrough video.
+- [PS 12.4](E-w12-ps12.4-solutions.md) — An eighteen-month conference-circuit plan: three target venues, audited deadlines and eligibility.
+- [PS 12.5](E-w12-ps12.5-solutions.md) — A five-year research-identity memo: the through-line from this paper to three follow-ups.

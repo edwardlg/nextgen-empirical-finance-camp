@@ -12,13 +12,17 @@ number-sections: false
 ## What this is
 
 This site is the textbook, lab manual, instructor manual, and capstone
-gallery for an **8-week empirical finance research camp** aimed at
-advanced high-school students. It is built around real datasets (CRSP,
+gallery for a **12-week empirical finance research camp** aimed at
+advanced high-school students — an 8-week instructional core (Weeks 1–8)
+followed by a research conference (Week 9) and a 3-week paper-refinement
+and submission arc (Weeks 10–12). It is built around real datasets (CRSP,
 Compustat, HMDA, EDGAR, FRED, USPTO, and others — see the
 [data dictionary](book/appendices/C-data-dictionary/README.md)) and
 real methods (OLS and its standard-error pathologies, IV, DiD, RD,
-synthetic control, shift-share, event studies, text-as-data, and an AI
-copilot lab).
+synthetic control, shift-share, event studies, text-as-data, an AI
+copilot lab, multiple-testing-honest robustness, heterogeneous-treatment
+effects, mediation done right, and the publication mechanics of an SSRN
+preprint and a peer-reviewed venue submission).
 
 The camp is hosted by **[Prof. Lei Gao](https://business.gmu.edu/)**,
 Associate Professor of Finance at George Mason University's Costello

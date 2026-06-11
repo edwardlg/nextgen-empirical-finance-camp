@@ -33,7 +33,7 @@ execute:
 
 book:
   title: "NextGen Empirical Finance Research Camp"
-  subtitle: "An 8-Week Camp in Empirical Finance for High-School Researchers"
+  subtitle: "A 12-Week Camp in Empirical Finance for High-School Researchers"
   author:
     - name: "Lei Gao"
       affiliation: "Costello College of Business, George Mason University"
@@ -55,12 +55,12 @@ book:
     creator: "@gmu_business"
     card-style: summary_large_image
     title: "NextGen Empirical Finance Research Camp"
-    description: "An 8-week empirical-finance research camp for advanced high-school students."
+    description: "A 12-week empirical-finance research camp for advanced high-school students."
   open-graph:
     locale: en_US
     site-name: "NextGen Empirical Finance Research Camp"
     title: "NextGen Empirical Finance Research Camp"
-    description: "An 8-week empirical-finance research camp for advanced high-school students."
+    description: "A 12-week empirical-finance research camp for advanced high-school students."
   favicon: ""
   site-url: "https://edwardlg.github.io/nextgen-empirical-finance-camp/"
   navbar:
@@ -90,6 +90,14 @@ book:
             href: book/weeks/week-07/README.md
           - text: "Week 8 — Your Project II"
             href: book/weeks/week-08/README.md
+          - text: "Week 9 — The Conference"
+            href: book/weeks/week-09/README.md
+          - text: "Week 10 — Robustness v2"
+            href: book/weeks/week-10/README.md
+          - text: "Week 11 — Manuscript Build"
+            href: book/weeks/week-11/README.md
+          - text: "Week 12 — Submission Day"
+            href: book/weeks/week-12/README.md
       - text: "Capstones"
         href: book/capstones/README.md
       - text: "Instructor Manual"
@@ -292,6 +300,94 @@ book:
         - notebooks/week-08/nb8.4-reproducibility-check.ipynb
         - notebooks/week-08/nb8.5-final-manuscript-build.ipynb
 
+    - part: "Week 9 — The Conference: Presenting Empirical Research as a Real Deliverable"
+      chapters:
+        - book/weeks/week-09/README.md
+        - book/weeks/week-09/ch91-before-the-conference-72-hour-pre-flight.md
+        - book/weeks/week-09/ch92-the-8-minute-talk-decomposed.md
+        - book/weeks/week-09/ch93-during-the-conference-three-honest-answers.md
+        - book/weeks/week-09/ch94-poster-and-hallway-conversation.md
+        - book/weeks/week-09/ch95-after-the-conference-feedback-ledger-triage.md
+        - book/weeks/week-09/lab9-mock-conference-day.md
+        - book/weeks/week-09/mentor9-presenting-with-policy-stakes.md
+        - book/weeks/week-09/ps9.1.md
+        - book/weeks/week-09/ps9.2.md
+        - book/weeks/week-09/ps9.3.md
+        - book/weeks/week-09/ps9.4.md
+        - book/weeks/week-09/ps9.5.md
+        - book/weeks/week-09/assessment9.md
+        - notebooks/week-09/nb9.1-slide-timing-simulator.ipynb
+        - notebooks/week-09/nb9.2-anticipated-questions-matrix.ipynb
+        - notebooks/week-09/nb9.3-one-figure-test.ipynb
+        - notebooks/week-09/nb9.4-poster-layout-engine.ipynb
+        - notebooks/week-09/nb9.5-feedback-ledger.ipynb
+
+    - part: "Week 10 — Robustness v2: Multiple Testing, Heterogeneity, Mechanisms, External Validity"
+      chapters:
+        - book/weeks/week-10/README.md
+        - book/weeks/week-10/ch101-triaging-conference-feedback-cost-value-threat-identification-3x3.md
+        - book/weeks/week-10/ch102-multiple-testing-bonferroni-holm-bh-fdr-romano-wolf.md
+        - book/weeks/week-10/ch103-heterogeneous-treatment-effects-cate-causal-forests-pre-registration.md
+        - book/weeks/week-10/ch104-mechanism-analysis-without-bad-controls-mediation-acharya-blackwell-sen.md
+        - book/weeks/week-10/ch105-external-validity-transportability-would-this-replicate-2030.md
+        - book/weeks/week-10/lab10-robustness-battery-v2.md
+        - book/weeks/week-10/mentor10-how-referees-read-heterogeneity.md
+        - book/weeks/week-10/ps10.1.md
+        - book/weeks/week-10/ps10.2.md
+        - book/weeks/week-10/ps10.3.md
+        - book/weeks/week-10/ps10.4.md
+        - book/weeks/week-10/ps10.5.md
+        - book/weeks/week-10/assessment10.md
+        - notebooks/week-10/nb10.1-romano-wolf-step-down.ipynb
+        - notebooks/week-10/nb10.2-causal-forest-on-synthetic-data.ipynb
+        - notebooks/week-10/nb10.3-mediation-done-right.ipynb
+        - notebooks/week-10/nb10.4-oster-delta-and-bounds.ipynb
+        - notebooks/week-10/nb10.5-transportability-audit.ipynb
+
+    - part: "Week 11 — Manuscript Build: Abstract, Tables, Figures, Intro, Literature"
+      chapters:
+        - book/weeks/week-11/README.md
+        - book/weeks/week-11/ch111-the-250-word-abstract-the-five-sentence-skeleton.md
+        - book/weeks/week-11/ch112-publication-grade-tables-pyfixest-etable-stars-discipline-panel-structure.md
+        - book/weeks/week-11/ch113-publication-grade-figures-event-study-specification-curve-heterogeneity-forest.md
+        - book/weeks/week-11/ch114-the-introduction-rewrite-five-paragraph-structure-and-how-to-diagnose-a-sick-intro.md
+        - book/weeks/week-11/ch115-the-expanded-literature-review-from-bullet-list-to-three-strand-argument.md
+        - book/weeks/week-11/lab11-manuscript-build.md
+        - book/weeks/week-11/mentor11-earning-space-in-a-crowded-field.md
+        - book/weeks/week-11/ps11.1.md
+        - book/weeks/week-11/ps11.2.md
+        - book/weeks/week-11/ps11.3.md
+        - book/weeks/week-11/ps11.4.md
+        - book/weeks/week-11/ps11.5.md
+        - book/weeks/week-11/assessment11.md
+        - notebooks/week-11/nb11.1-abstract-builder.ipynb
+        - notebooks/week-11/nb11.2-etable-camera-ready.ipynb
+        - notebooks/week-11/nb11.3-event-study-twelve-ways.ipynb
+        - notebooks/week-11/nb11.4-intro-diagnostic.ipynb
+        - notebooks/week-11/nb11.5-lit-review-network.ipynb
+
+    - part: "Week 12 — Submission Day: SSRN, MARS, Conference Circuit, the Long Arc"
+      chapters:
+        - book/weeks/week-12/README.md
+        - book/weeks/week-12/ch121-submitting-to-schar-young-scholars-journal-and-mars-repository.md
+        - book/weeks/week-12/ch122-the-ssrn-preprint-posting-decisions-versioning-doi-question.md
+        - book/weeks/week-12/ch123-from-poster-to-journal-of-finance-the-decade-long-arc-of-a-paper.md
+        - book/weeks/week-12/ch124-the-conference-circuit-fma-undergraduate-poster-aea-pipeline-sfs-cavalcade.md
+        - book/weeks/week-12/ch125-what-comes-after-submission-the-reviewer-wait-the-desk-reject-the-rr.md
+        - book/weeks/week-12/lab12-submission-day.md
+        - book/weeks/week-12/mentor12-the-decade-arc-of-a-paper-in-the-jf-pipeline.md
+        - book/weeks/week-12/ps12.1.md
+        - book/weeks/week-12/ps12.2.md
+        - book/weeks/week-12/ps12.3.md
+        - book/weeks/week-12/ps12.4.md
+        - book/weeks/week-12/ps12.5.md
+        - book/weeks/week-12/assessment12.md
+        - notebooks/week-12/nb12.1-submission-packet-builder.ipynb
+        - notebooks/week-12/nb12.2-ssrn-metadata-generator.ipynb
+        - notebooks/week-12/nb12.3-mars-repository-schema.ipynb
+        - notebooks/week-12/nb12.4-conference-calendar-engine.ipynb
+        - notebooks/week-12/nb12.5-five-year-research-identity-map.ipynb
+
     - part: "Capstone Projects"
       chapters:
         - book/capstones/README.md
@@ -416,6 +512,26 @@ book:
         - book/appendices/E-solutions-manual/E-w8-ps8.3-solutions.md
         - book/appendices/E-solutions-manual/E-w8-ps8.4-solutions.md
         - book/appendices/E-solutions-manual/E-w8-ps8.5-solutions.md
+        - book/appendices/E-solutions-manual/E-w9-ps9.1-solutions.md
+        - book/appendices/E-solutions-manual/E-w9-ps9.2-solutions.md
+        - book/appendices/E-solutions-manual/E-w9-ps9.3-solutions.md
+        - book/appendices/E-solutions-manual/E-w9-ps9.4-solutions.md
+        - book/appendices/E-solutions-manual/E-w9-ps9.5-solutions.md
+        - book/appendices/E-solutions-manual/E-w10-ps10.1-solutions.md
+        - book/appendices/E-solutions-manual/E-w10-ps10.2-solutions.md
+        - book/appendices/E-solutions-manual/E-w10-ps10.3-solutions.md
+        - book/appendices/E-solutions-manual/E-w10-ps10.4-solutions.md
+        - book/appendices/E-solutions-manual/E-w10-ps10.5-solutions.md
+        - book/appendices/E-solutions-manual/E-w11-ps11.1-solutions.md
+        - book/appendices/E-solutions-manual/E-w11-ps11.2-solutions.md
+        - book/appendices/E-solutions-manual/E-w11-ps11.3-solutions.md
+        - book/appendices/E-solutions-manual/E-w11-ps11.4-solutions.md
+        - book/appendices/E-solutions-manual/E-w11-ps11.5-solutions.md
+        - book/appendices/E-solutions-manual/E-w12-ps12.1-solutions.md
+        - book/appendices/E-solutions-manual/E-w12-ps12.2-solutions.md
+        - book/appendices/E-solutions-manual/E-w12-ps12.3-solutions.md
+        - book/appendices/E-solutions-manual/E-w12-ps12.4-solutions.md
+        - book/appendices/E-solutions-manual/E-w12-ps12.5-solutions.md
 
   page-footer:
     border: true

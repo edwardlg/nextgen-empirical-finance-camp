@@ -1,12 +1,13 @@
 ---
 title: "NextGen Empirical Finance Research Camp"
-subtitle: "An 8-week, research-grade introduction to empirical finance for advanced high-school students"
+subtitle: "A 12-week, research-grade introduction to empirical finance for advanced high-school students"
 pagetitle: "NextGen Empirical Finance Research Camp"
 description-meta: >
-  An 8-week empirical finance research camp for advanced high-school students.
+  A 12-week empirical finance research camp for advanced high-school students.
   Hosted by Prof. Lei Gao at George Mason University's Costello College of Business.
-  Probability, OLS, causal inference, quasi-experiments, text-as-data, and a
-  capstone research paper — built around real data and real methods.
+  Probability, OLS, causal inference, quasi-experiments, text-as-data, a capstone
+  research paper, a research conference, and a submission to a peer-reviewed venue —
+  built around real data and real methods.
 toc: false
 number-sections: false
 page-layout: full
@@ -17,10 +18,10 @@ format:
       - text: |
           <meta name="twitter:card" content="summary_large_image">
           <meta name="twitter:title" content="NextGen Empirical Finance Research Camp">
-          <meta name="twitter:description" content="An 8-week empirical-finance research camp for advanced high-school students, hosted by Prof. Lei Gao at GMU.">
+          <meta name="twitter:description" content="A 12-week empirical-finance research camp for advanced high-school students, hosted by Prof. Lei Gao at GMU.">
           <meta property="og:type" content="website">
           <meta property="og:title" content="NextGen Empirical Finance Research Camp">
-          <meta property="og:description" content="An 8-week empirical-finance research camp for advanced high-school students, hosted by Prof. Lei Gao at GMU.">
+          <meta property="og:description" content="A 12-week empirical-finance research camp for advanced high-school students, hosted by Prof. Lei Gao at GMU.">
           <meta property="og:site_name" content="NextGen Empirical Finance Research Camp">
 ---
 
@@ -32,7 +33,7 @@ George Mason University · Costello College of Business
 
 # NextGen Empirical Finance Research Camp {.hero-title}
 
-### Eight weeks. Real data. Real methods. A research paper at the end. {.hero-subtitle}
+### Twelve weeks. Real data. Real methods. A research paper, a conference talk, and a submission at the end. {.hero-subtitle}
 
 A textbook-and-lab system for high-school researchers who want to do
 empirical finance the way it is actually done: with code, with data,
@@ -53,13 +54,13 @@ Costello College of Business, George Mason University.
 
 ::: {.quick-stats}
 ::: {.stat}
-[**8**]{.stat-num} [Weeks]{.stat-lbl}
+[**12**]{.stat-num} [Weeks]{.stat-lbl}
 :::
 ::: {.stat}
-[**40**]{.stat-num} [Chapters]{.stat-lbl}
+[**60**]{.stat-num} [Chapters]{.stat-lbl}
 :::
 ::: {.stat}
-[**40**]{.stat-num} [Notebooks]{.stat-lbl}
+[**60**]{.stat-num} [Notebooks]{.stat-lbl}
 :::
 ::: {.stat}
 [**34**]{.stat-num} [Data cards]{.stat-lbl}
@@ -74,7 +75,12 @@ Costello College of Business, George Mason University.
 
 ---
 
-## The 8-week arc
+## The 12-week arc
+
+Weeks 1–8 are the **instructional core** (NextGen Phase 1 plus the symposium
+transition). Week 9 is the **research conference** (NextGen Phase 2).
+Weeks 10–12 are the **paper-refinement arc** (NextGen Phase 3) — robustness
+v2, manuscript build, and a real submission.
 
 ::: {.week-grid}
 
@@ -142,6 +148,42 @@ Specification curve, robustness battery, writing the paper, peer review,
 defense, replication packet. Final manuscript and repo.
 :::
 
+::: {.week-card}
+### [Week 9](book/weeks/week-09/README.md)
+**The Conference**
+
+The 72-hour pre-flight, the 8-minute talk decomposed, hostile-question
+taxonomy, poster and hallway conversation, the 24-hour feedback ledger.
+Lab: a full conference day, end-to-end.
+:::
+
+::: {.week-card}
+### [Week 10](book/weeks/week-10/README.md)
+**Robustness v2**
+
+Triaging conference feedback on the cost-value-threat 3×3; multiple testing
+(Romano-Wolf); heterogeneous effects (CATE, causal forests); mediation done
+right; external validity. Lab: robustness battery v2.
+:::
+
+::: {.week-card}
+### [Week 11](book/weeks/week-11/README.md)
+**Manuscript Build**
+
+The 250-word abstract and five-sentence skeleton, publication-grade tables
+and figures, the introduction rewrite, the expanded literature review as a
+three-strand argument. Lab: press-ready manuscript build.
+:::
+
+::: {.week-card}
+### [Week 12](book/weeks/week-12/README.md)
+**Submission Day**
+
+Schar Young Scholars Journal and MARS, the SSRN preprint, the decade-long
+arc from poster to *JF*, the conference circuit (FMA, SFS Cavalcade, AEA),
+and what comes after submission. Lab: submission day.
+:::
+
 :::
 
 ---
@@ -169,15 +211,24 @@ first.
 
 ## What you'll build
 
-By the end of week 8 you will have:
+By the end of week 12 you will have:
 
 - A **research paper** answering a question of your own choosing, with a
   pre-analysis plan, a real dataset, an identification strategy, a
-  specification curve, and an honest robustness section.
+  specification curve, and an honest robustness section (Weeks 7–8).
 - A **public replication packet**: code, data references, a README, an
-  environment file, and a one-command rebuild.
-- A **presentation and defense** of your result — including the questions
-  you cannot yet answer.
+  environment file, and a one-command rebuild (Week 8, re-built in Week 12).
+- A **conference talk and poster** that survive an adversarial Q&A
+  session — including the questions you cannot yet answer (Week 9).
+- A **second-round robustness battery** (Romano–Wolf multiple-testing,
+  causal-forest heterogeneity, sequential-*g* mediation, transportability)
+  and a referee-style revision memo (Week 10).
+- A **press-ready manuscript** in the AEA LaTeX template — 250-word
+  abstract, publication-grade tables and figures, rewritten introduction,
+  three-strand literature review (Week 11).
+- A **real submission**: an SSRN preprint, a Schar Young Scholars Journal
+  portal submission, a GMU MARS repository deposit, and a populated
+  conference-submission calendar for the year ahead (Week 12).
 - **Reading fluency** in five canonical empirical-finance papers, plus
   five more from the text/AI tradition.
 

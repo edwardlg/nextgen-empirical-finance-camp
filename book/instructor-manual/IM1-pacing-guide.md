@@ -8,43 +8,78 @@
 > All cross-references are by name so this manual survives reordering.
 
 This camp has two clocks running at once, and the first job of any instructor is to keep them
-straight. The first clock is the **8-week residential/intensive clock** the textbook was written
-to — eight themed weeks, each a self-contained unit of five chapters, five problem sets, five
-notebooks, a lab or reading pack, a 60-minute Lei Gao mentor session, and an end-of-week assessment.
-The second clock is the **real NextGen calendar** the camp feeds (CONVENTIONS §8): a 12-week program
-running Jun 26–Sep 11 2026, whose Phase 1 is only **seven** weekly Friday meetings, 12:00–2:00pm EST.
-Two hours a week for seven weeks is roughly fourteen contact hours; the 8-week book is built for
-something closer to two hundred. The compression is therefore not a trim — it is a re-architecture,
-and §3 below is the concrete mapping that makes it work. Read §1 and §2 first so you know what you
-are compressing *from*.
+straight. The first clock is the **12-week program clock** the textbook was rebuilt around — twelve
+weeks running Jun 26–Sep 11 2026, broken into three phases that each have their own metabolism. The
+second clock is the **NextGen calendar** the camp feeds (CONVENTIONS §8), whose Phase 1 is only
+**seven** weekly Friday meetings 12:00–2:00pm EST, whose Phase 2 is a single symposium week, and
+whose Phase 3 is four Fridays of paper refinement. Two hours a week for seven weeks is roughly
+fourteen contact hours; the camp's curriculum was built for closer to two hundred. The Friday
+schedule is therefore not a trim of the curriculum — it is a re-architecture against an asynchronous
+backbone, and §3 below is the concrete mapping that makes it work. Read §1 and §2 first so you know
+what you are compressing *from*, and what Phases 2–3 are *for*.
 
 ---
 
-## 1. The 8-week clock
+## 1. The 12-week clock
 
-The eight weeks are not eight parallel modules; they are a single load-bearing arc, and the order is
-not negotiable. Weeks 1–4 build the toolkit from the ground up: probability and the logic of
-inference (W1), the OLS engine and its standard-error pathologies (W2), causal inference from
-potential outcomes through matching and instruments (W3), and the modern quasi-experimental toolkit —
-DiD, RD, synthetic control, shift-share — together with the recent literature showing the obvious
-estimators are often wrong (W4). Weeks 5–6 turn from *running* estimators to *reading* them: one
-empirical paper per day under a fixed Reader's-Guide anatomy (W5), then text-as-data and a full
-module on using LLMs as a research co-pilot without fooling yourself (W6). Weeks 7–8 are the
-capstone: question to pre-analysis plan (W7), then execution, robustness, writing, and defense (W8).
-Each week earns the next. You cannot read a weak-instrument disaster in Week 5 if you did not derive
-2SLS in Week 3; you cannot stress-test your own DiD in Week 8 if you did not meet the
-staggered-adoption crisis in Week 4. When you compress, you may *thin* a week, but you may not
-*reorder* the dependencies.
+The twelve weeks are not twelve parallel modules; they are one load-bearing arc broken into three
+phases, and the order is not negotiable. **Phase 1 (Weeks 1–8) is intensive curriculum and project
+build**; **Phase 2 (Week 9) is the symposium**; **Phase 3 (Weeks 10–12) is paper refinement under
+referee-style feedback**. The book that lives at `book/weeks/week-NN/` reflects this directly: Weeks
+1–8 carry the curriculum and the first capstone draft, Week 9 carries the symposium machinery, and
+Weeks 10–12 carry the revise-and-resubmit cycle. Each phase has a different metabolism, a different
+weekly rhythm, and a different rubric (IM-2), and an instructor who runs Phase 3 as if it were Phase
+1 will exhaust the cohort; an instructor who runs Phase 1 as if it were Phase 3 will arrive at the
+symposium with nothing to defend.
 
-A useful way to hold the whole arc in mind: Weeks 1–4 answer "what is a defensible number?", Weeks
+### Phase 1 — Weeks 1–8, the intensive curriculum and first paper
+
+Weeks 1–4 build the toolkit from the ground up: probability and the logic of inference (W1), the OLS
+engine and its standard-error pathologies (W2), causal inference from potential outcomes through
+matching and instruments (W3), and the modern quasi-experimental toolkit — DiD, RD, synthetic
+control, shift-share — together with the recent literature showing the obvious estimators are often
+wrong (W4). Weeks 5–6 turn from *running* estimators to *reading* them: one empirical paper per day
+under a fixed Reader's-Guide anatomy (W5), then text-as-data and a full module on using LLMs as a
+research co-pilot without fooling yourself (W6). Weeks 7–8 are the build: question to pre-analysis
+plan (W7), then execution, robustness, and a frozen first-look draft (W8). Each week earns the next.
+You cannot read a weak-instrument disaster in Week 5 if you did not derive 2SLS in Week 3; you cannot
+stress-test your own DiD in Week 8 if you did not meet the staggered-adoption crisis in Week 4. When
+you compress (see §3), you may *thin* a week but you may not *reorder* the dependencies.
+
+A useful way to hold the Phase-1 arc in mind: Weeks 1–4 answer "what is a defensible number?", Weeks
 5–6 answer "how do I judge someone else's number, including a machine's?", and Weeks 7–8 answer "can
-I produce a defensible number of my own and survive a referee?" The terminal assessment (W8) is the
-only thing the camp was ever building toward, and every earlier week is rehearsal for it.
+I produce a defensible first-look number of my own?" The frozen first-look is what Phase 2 defends
+and Phase 3 turns into a publication-bar paper; every Phase-1 week is rehearsal for it.
 
-### The within-week rhythm
+### Phase 2 — Week 9, the symposium
 
-Within a full week, the book assumes a five-day cycle with a stable **daily block structure**. The
-block is the unit of pacing, and it repeats:
+Week 9 is the symposium itself. The chapters (`book/weeks/week-09/ch91-..ch95-...md`) cover talk
+craft, slide architecture, the threats-table-as-question-bank discipline, the dry-run protocol, and
+the post-talk Q&A turn. The mentor session is Mentor 9 (the presentation rubric and how a working
+researcher answers the question they wish you'd asked). The deliverables are the talk, the slide
+deck, and the live defense; the grading rubric for the week is the **presentation rubric from Mentor
+8** combined with Week-9's defense rubric (IM-2 §9). Phase 2 is short and high-stakes, and its
+weekly rhythm is unlike Phase 1's: there is no new technical content, the daily block dissolves into
+rehearsal, and the synchronous time becomes coaching, not teaching.
+
+### Phase 3 — Weeks 10–12, paper refinement
+
+Phase 3 is where the camp's terminal standard — a paper that survives a first-round referee at the
+Schar Young Scholars Journal and deposits cleanly into GMU MARS — is actually met. Weeks 10–12 cover
+the three movements of a real revise-and-resubmit: **W10 — reading and triaging the referee report**,
+producing a point-by-point response memo and a revised plan of action; **W11 — executing the
+revision**, with new robustness, rewritten exposition, and publication-quality tables; **W12 — the
+final reproducibility check and submission**, with the `make clean && make all` rebuild, the
+responsible-AI disclosure, and the MARS deposit. The mentors for these weeks are Mentor 10
+("How a referee actually reads"), Mentor 11 ("Revising without overfitting to the referee"), and
+Mentor 12 ("What submission day looks like"). The rubric is the **paper-refinement rubric** in IM-2
+§10–§12, which weights the response memo, the revision quality, and the reproducibility of the final
+artifact — *not* the cleverness of new analyses.
+
+### The within-week rhythm — Phase 1
+
+Within a full Phase-1 week, the book assumes a five-day cycle with a stable **daily block
+structure**. The block is the unit of pacing, and it repeats:
 
 1. **Read the chapter** (one of the week's five), which follows the mandated reveal-the-trick
    structure from CONVENTIONS §1: state the result in a plain sentence, show *why* it works
@@ -52,228 +87,200 @@ block is the unit of pacing, and it repeats:
    breaks and what you see when it does), then show the runnable code. A chapter is roughly a
    60–90 minute read for the target student.
 2. **Work the notebook** that mirrors the chapter (nbN.k), which re-derives the chapter's central
-   move in code and ends with a "Your Turn" extension. Budget 45–75 minutes; the notebook is where
-   the chapter's claim becomes something the student's own hands have produced.
-3. **Do the problem set** (psN.k, ~6 problems), which is the day's graded practice. Solutions live
-   in Appendix E; students should attempt before consulting. Budget 60–90 minutes.
+   move in code and ends with a "Your Turn" extension. Budget 45–75 minutes.
+3. **Do the problem set** (psN.k, ~6 problems). Solutions live in Appendix E; students should
+   attempt before consulting. Budget 60–90 minutes.
 4. **Lab / mentor as the week's spine.** The lab (Weeks 1–4, 7–8) or reading pack (Weeks 5–6) is the
-   integrative artifact that ties the five chapters into one build — a coin-flip universe (Lab 1), a
-   Fama–MacBeth replication (Lab 2), a weak-IV pathology (Lab 3), a clean DiD on HMDA (Lab 4), a
-   reproducible data repo (Lab 7), a final manuscript + repo + defense (Lab 8). The 60-minute **Lei
-   Gao mentor session** sits late in the week as the intellectual capstone of the days' work, tied to
-   one of his papers (see IM-4 for facilitation).
+   integrative artifact that ties the five chapters into one build. The 60-minute **Lei Gao mentor
+   session** sits late in the week as the intellectual capstone, tied to one of his papers (see
+   IM-4 for facilitation).
 
-A typical full-day rhythm therefore runs: morning chapter + notebook, afternoon problem set, with
-the lab threaded across the back half of the week and the mentor session on day four or five. The
-end-of-week **assessment** closes the loop on day five, graded against the week's rubric (IM-2).
+A typical Phase-1 day runs: morning chapter + notebook, afternoon problem set, with the lab threaded
+across the back half of the week and the mentor session on day four or five. The end-of-week
+**assessment** closes the loop on day five, graded against the week's rubric (IM-2). For a student
+hitting the daily block, a Phase-1 week costs on the order of 25–35 contact-and-homework hours —
+five chapters (≈6 h reading), five notebooks (≈5 h), five problem sets (≈6 h), the lab (≈4–6 h), the
+mentor session (1 h + a pre-read), and the assessment (≈3–4 h). This is **full-time effective load**;
+the residential cohort treats it as a workday.
 
-### Hours per week, roughly
+### The within-week rhythm — Phase 2
 
-For a student hitting the daily block, a full week costs on the order of 25–35 contact-and-homework
-hours: five chapters (≈6 h reading), five notebooks (≈5 h), five problem sets (≈6 h), the lab
-(≈4–6 h), the mentor session (1 h + a pre-read), and the assessment (≈3–4 h). Technical weeks (2–4)
-sit at the high end; the reading weeks (5–6) are lighter per-chapter but heavier on the daily
-replication problem sets. Knowing these magnitudes is what makes the NextGen compression honest: you
-cannot move 30 hours of work into a 2-hour Friday and pretend nothing was cut.
+Week 9 dissolves the chapter-a-day rhythm. The week's five "chapters" (ch91–ch95) are short — talk
+craft, the slide architecture, the threats table as a question bank, the dry-run protocol, and the
+post-talk turn — and they are best read in two evenings, not five mornings. The week then runs as
+**three rehearsal cycles**: a private dry-run (Mon), a peer dry-run with the threats-table question
+bank (Wed), and a final dry-run with at least one faculty critic (Thu). The **conference dry-run
+itself is scheduled Mon Aug 10** (the symposium week); the **symposium is Fri Aug 14, Week 9**. The
+mentor segment (Mentor 9) sits Tuesday, between the private and peer dry-runs, when students have
+just enough self-awareness about their own talk to learn from a professional's. Total load drops to
+about 15–20 hours, weighted toward rehearsal and slide iteration rather than reading or coding.
+
+### The within-week rhythm — Phase 3
+
+Weeks 10–12 invert Phase 1. There is no chapter-a-day; instead, the week has a **referee-report
+metabolism**. W10 begins with the referee report (peer plus instructor) on the Phase-1 first-look,
+delivered Monday; the cohort spends Tuesday in close reading, Wednesday drafting the response memo,
+Thursday in a peer-critique circle on the memo, and Friday (the synchronous Friday) defending the
+revision plan with Mentor 10. W11 is execution: re-running specifications, building new robustness,
+rewriting the exposition, retiring weak figures, and stress-testing tables — the daily block becomes
+"one referee point per day", graded against IM-2 §11. W12 is closeout: the `make clean && make all`
+rebuild on a fresh machine, the responsible-AI disclosure, the MARS deposit checklist, and the
+submission. Load is uneven — W10 is light (15–20 h), W11 is heavy (30+ h), W12 returns to ~20 h with
+a hard stop at the submission deadline.
 
 ---
 
 ## 2. How a week's pieces fit together
 
-The seven components of a week are not interchangeable; each does a distinct pedagogical job, and the
-compression in §3 works only if you know which jobs are sacrificable and which are not.
+The seven components of a Phase-1 week are not interchangeable; each does a distinct pedagogical
+job, and the compression in §3 works only if you know which jobs are sacrificable and which are
+not. The opening narrative (~1,300 w) sets the week's question in a recurring-cast frame (Maya,
+Devon, Priya, Sam, Leah) — Maya's loan-approval puzzle for causal inference, Priya's
+climate-insurance shock for DiD; it is motivational and *cuttable to a paragraph* under compression.
+The **five chapters** carry the conceptual spine and are the least sacrificable content; under
+compression you assign them as *pre-reading*, not as in-session reading. The **five notebooks** are
+where understanding is verified by production — highly compressible in session (demo one, assign the
+rest) but never skippable entirely. The **five problem sets** are graded practice; under compression
+they collapse to one or two core problems per week (IM-5 flags which). The **lab / reading pack** is
+the integrative artifact and the natural home of the week's deliverable, the piece most worth
+protecting. The **mentor session** is the camp's signature, mapping cleanly onto a guest slot or a
+live Friday segment (IM-4). The **assessment** is the graded checkpoint.
 
-- **The opening narrative** (~1,300 w) sets the week's question in a recurring-cast frame (Maya,
-  Devon, Priya, Sam, Leah) — Maya's loan-approval puzzle for causal inference, Priya's
-  climate-insurance shock for DiD. It is short, motivational, and *cuttable to a paragraph* under
-  compression without loss of rigor.
-- **The five chapters** carry the conceptual spine and are the least sacrificable content. Under
-  compression you assign them as *pre-reading*, not as in-session reading.
-- **The five notebooks** are where understanding is verified by production. They are highly
-  compressible *in session* (you demo one, assign the rest) but should never be skipped entirely —
-  a student who has never run the code has not learned the week.
-- **The five problem sets** are graded practice; under compression they collapse to one or two
-  "core" problems per week (IM-5 flags which problems are the highest-signal).
-- **The lab / reading pack** is the integrative artifact and the natural home of the week's
-  deliverable. It is the piece most worth protecting under compression because it is where skills
-  combine.
-- **The mentor session** is the camp's signature — a working researcher walking students through how
-  a real finding gets made and killed. It maps cleanly onto a guest slot or a live Friday segment
-  (IM-4).
-- **The assessment** is the graded checkpoint. Under compression, several weekly assessments fold
-  into fewer, larger deliverables (see §3 and IM-2).
-
-The dependency that most constrains scheduling is **data access**: the labs in Weeks 2, 4, 5, and the
-capstone all touch CRSP/Compustat/HMDA, which under CONVENTIONS §5 stay read-only on GMU
-infrastructure. WRDS seats and Hopper compute must be provisioned *before* the week that needs them,
-not during it — this is an IM-6 concern that nonetheless drives the pacing, because a week whose lab
-cannot run is a week half-lost.
+Phase 2's pieces are different: five short chapters, one mentor (Mentor 9), three rehearsal cycles,
+and one live defense. Phase 3's pieces are different again: the referee report (an artifact, not a
+chapter), the response memo, the revision artifact, three mentor sessions (10, 11, 12), and the
+submission packet. The dependency that most constrains scheduling across all three phases is **data
+access**: the labs in Weeks 2, 4, 5, and the capstone all touch CRSP/Compustat/HMDA, which under
+CONVENTIONS §5 stay read-only on GMU infrastructure. WRDS seats and Hopper compute must be
+provisioned *before* the week that needs them, not during it — an IM-6 concern that drives pacing,
+because a week whose lab cannot run is a week half-lost, and a Phase-3 revision whose data pipeline
+breaks is a submission missed.
 
 ---
 
-## 3. Compressing 8 weeks into NextGen's 7 Friday sessions
+## 3. The 12 weeks against NextGen's Friday-only calendar
 
-This is the section instructors will return to most, so it is concrete. The real program
-(CONVENTIONS §8) is 12 weeks, Jun 26–Sep 11 2026, structured in three phases:
+NextGen Phase 1 is **seven** weekly Fridays, 12:00–2:00pm EST, Jun 26–Aug 7. The book's Phase 1 is
+**eight** weeks of curriculum, so something has to give — but the give is on the *Friday* side, not
+the curriculum side. The governing principle: **the seven Phase-1 Fridays cover eight weeks of
+material by merging the two reading weeks (W5+W6) into one Friday and pushing all chapter reading
+and most notebook execution to async between-Friday self-study**. The synchronous two hours buy what
+recordings cannot: the mentor's live reasoning, a critique that responds to *this* student's error,
+and the experience of watching a result break in real time.
 
-- **Phase 1 — seven weekly Friday meetings, 12:00–2:00pm EST** (the synchronous core).
-- **Phase 2 — the conference presentation, ~Aug 15** (the talk + defense).
-- **Phase 3 — four weeks of paper refinement** (revise-and-resubmit toward the Schar Young Scholars
-  Journal and the GMU MARS deposit).
-
-The 8-week book maps onto these three phases as follows. The governing principle: **move chapters
-and notebooks to asynchronous pre-work, reserve the two synchronous Friday hours for the mentor
-session and live design/critique that cannot happen alone, and let Phases 2–3 absorb Weeks 7–8.**
-
-### The seven Friday sessions (Phase 1)
+### The seven Phase-1 Fridays
 
 Each Friday is two hours. A reliable internal shape is: **0:00–0:20** debrief on the week's pre-work
-and the prior deliverable; **0:20–1:10** the mentor/teaching segment (a live or recorded Lei Gao
-mentor session, or the instructor walking one notebook); **1:10–1:50** live work — a critique
-circle, a pair-coding clinic, or a design workshop; **1:50–2:00** assign the coming week's pre-work
-and deliverable. The seven sessions map to the eight book-weeks like this:
+and prior deliverable; **0:20–1:10** the mentor/teaching segment; **1:10–1:50** live work — a
+critique circle, pair-coding clinic, or design workshop; **1:50–2:00** assign the coming week's
+pre-work and deliverable. The seven Fridays map to the eight book-weeks like this:
 
-| Friday | Book content folded in | Synchronous focus (the 2 hours) | Async pre-work assigned | Deliverable due |
-|---|---|---|---|---|
-| **F1** | W1 (Probability & Inference) | Mentor Session 1, *"What is a finding?"*; live coin-flip/size-power demo (Lab 1 core) | W1 Ch 1.3–1.5 + nb1.3–1.5 | W1 mini-sim (size of a t-test) — core of Assessment W1 |
-| **F2** | W2 (OLS Engine) | Mentor Session 2, *"Why your SE is the whole ballgame"*; FWL + clustered-SE clinic | W2 Ch 2.1, 2.3, 2.4 + nb2.4 | W2 SE-choice mini-replication |
-| **F3** | W3 (Causal I: PO, matching, IV) | Mentor Session 3, *"Natural experiments"* (Deng, Gao & Kim 2020); weak-IV live demo (Lab 3 core) | W3 Ch 3.1, 3.4, 3.5 + nb3.4–3.5 | W3 weak-IV / AR-coverage task |
-| **F4** | W4 (Causal II: DiD/RD/SC/shift-share) | Mentor Session 4, *"Detecting discrimination with a clean design"* (Gao & Sun 2019); staggered-DiD clinic | W4 Ch 4.1–4.3 + nb4.1–4.2; Lab 4 (HMDA DiD) as take-home | W4 staggered-DiD task; **first capstone idea memo** |
-| **F5** | W5 + W6 (Reading the Frontier I & II) **merged** | Mentor 5 *"Anatomy of a JF paper"* + Mentor 6 *"Text as data, AI without fooling yourself"* (paired); one live Reader's-Guide walk-through; the responsible-AI checklist | W5 Reader's-Guide pack + one classic; W6 Ch 6.5 (AI co-pilot) + nb6.5 | A single Reader's Guide on an unseen paper **+** a one-classifier OOS-validation report (merged W5/W6 assessment) |
-| **F6** | W7 (Question → PAP) | Mentor Session 7, *"How I pick a project — and kill one"*; live idea-generation + identification-memo workshop | W7 Ch 7.1–7.5 + nb7.2, nb7.4; Lab 7 (stand up the repo) | **PAP + identification memo, filed as a `pap-filed` tagged commit** (the W7 deliverable) |
-| **F7** | W8 (Execution & robustness, kickoff) | Mentor Session 8, *"Defending a result"*; robustness-battery clinic; talk-craft + peer-review setup | W8 Ch 8.1–8.5 + nb8.1–8.4; run the pre-registered spec once | **Confirmatory results + robustness battery + draft paper**; talk scheduled into Phase 2 |
+| Friday | Date (2026) | Book content | Synchronous focus | Async between Fridays | Deliverable due |
+|---|---|---|---|---|---|
+| **F1** | Jun 26 | W1 — Probability & Inference | Mentor 1, *"What is a finding?"*; live size/power demo (Lab 1 core) | W1 chapters + notebooks | W1 mini-sim (size of a t-test) |
+| **F2** | Jul 3 | W2 — OLS Engine | Mentor 2, *"Why your SE is the whole ballgame"*; FWL + clustered-SE clinic | W2 chapters + notebooks | W2 SE-choice mini-replication |
+| **F3** | Jul 10 | W3 — Causal I (PO, matching, IV) | Mentor 3, *"Natural experiments"* (Deng, Gao & Kim 2020); weak-IV demo | W3 chapters + notebooks; Lab 3 | W3 weak-IV / AR-coverage task |
+| **F4** | Jul 17 | W4 — Causal II (DiD/RD/SC) | Mentor 4, *"Detecting discrimination with a clean design"* (Gao & Sun 2019) | W4 chapters + notebooks; Lab 4 (HMDA DiD) | W4 staggered-DiD task; **first capstone idea memo** |
+| **F5** | Jul 24 | W5 + W6 merged | Mentor 5 *"Anatomy of a JF paper"* + Mentor 6 *"AI without fooling yourself"*; Reader's-Guide walk | W5 reading pack + W6 Ch 6.5 + nb6.5 | Reader's Guide on unseen paper + one classifier OOS-validation report |
+| **F6** | Jul 31 | W7 — Question → PAP | Mentor 7, *"How I pick a project — and kill one"*; identification-memo workshop | W7 chapters + notebooks; Lab 7 (stand up repo) | **PAP filed end of Week 5 of the program — a `pap-filed` tagged commit** |
+| **F7** | Aug 7 | W8 — Execution & frozen first-look | Mentor 8, *"Defending a result"*; robustness clinic; **presentation-rubric introduced** | W8 chapters + notebooks; run pre-registered spec once | **First-look frozen Week 5 of program (tagged commit)** + robustness battery + draft talk |
 
-Two structural moves make this fit. First, **Weeks 5 and 6 merge into one Friday (F5)**: both are
+Two structural moves make this fit. First, **W5 and W6 merge into one Friday (F5)**: both are
 "reading the frontier," both replace a lab with a reading/AI pack, and both end-of-week assessments
-are "produce one artifact and validate it" (a Reader's Guide; a classifier with an OOS report). They
-combine into a single deliverable without losing the load-bearing skill of either — critical reading
-and validated measurement. Second, **Weeks 7 and 8 stop being self-contained weeks and become the
-spine of the whole program**: F6 produces the design (PAP + memo), F7 kicks off execution, and the
-actual paper, robustness, talk, and defense spill deliberately into Phases 2 and 3.
+are "produce one artifact and validate it." Second, **W7 and W8 are not in self-contained Fridays**:
+F6 freezes the design (PAP tag) and F7 freezes the first-look (results tag), with the actual paper,
+talk craft, and defense deliberately spilling into Phases 2 and 3.
 
-### A worked Friday, end to end (F3 as the example)
+Two critical milestones live inside this table and are worth restating, because everything
+downstream depends on them holding. The **PAP is filed end of Week 5 of the program (F6, Jul 31)**
+as a `pap-filed` tagged commit; this is non-negotiable, because breaking the pre-registration freeze
+voids the meaning of every Week-8 p-value. The **first-look results are frozen Week 5 of the program
+as well — at F7 (Aug 7)** with a `first-look-frozen` tag; everything after Phase 1 is revision under
+review, not exploration.
 
-To make the two-hour shape concrete, here is F3 (the causal-inference-I / weak-IV session) at the
-minute level. The cohort arrives having read W3 Ch 3.1, 3.4, 3.5 and worked nb3.4–3.5 as async
-pre-work, and having submitted the prior week's deliverable (the W2 SE-choice mini-replication).
+### The NextGen Phase-2 Friday (Week 8 of NextGen = Week 9 of the book)
 
-- **12:00–12:20 — Debrief.** Walk three submitted W2 deliverables (one strong, one with the classic
-  SE-flavor-by-reflex error, one in between), so the debrief teaches from the cohort's own work, not
-  a generic example. This is also where you surface the highest-signal Week-2 pitfall (IM-3) before
-  it migrates into Week-3 thinking.
-- **12:20–1:10 — Mentor segment.** Run (live or recorded) Mentor Session 3, *"Natural experiments:
-  finding the lever nature pulled,"* tied to Deng, Gao & Kim (2020). The three Socratic warm-ups and
-  three stretch questions in the mentor packet are the spine; IM-4 gives the facilitation protocol.
-- **1:10–1:50 — Live weak-IV demo.** The core of Lab 3: build a DGP where 2SLS is badly biased toward
-  OLS, show the first-stage F flag it, and contrast with a strong instrument. Do this as a
-  pair-coding clinic, not a lecture — students should *watch their own 2SLS estimate blow up* as the
-  instrument weakens. This is the durable cure for Pitfall 3.2 (IM-3).
-- **1:50–2:00 — Assign.** Hand out the W3 weak-IV / Anderson–Rubin coverage deliverable with its
-  rubric attached (IM-2 §3), and the async pre-work for F4 (W4 Ch 4.1–4.3, nb4.1–4.2).
+Phase 2 in the NextGen calendar is a single week, Aug 10–14, and book Week 9 covers it. The
+**conference dry-run is Mon Aug 10**, the peer dry-run is Wed Aug 12, the final dry-run with a
+faculty critic is Thu Aug 13, and the **symposium itself is Fri Aug 14**. The synchronous Friday
+*is* the symposium — there is no separate mentor segment; Mentor 9 was delivered Tuesday Aug 11
+asynchronously or in a 30-minute live drop-in. Grading uses the **presentation rubric from Mentor
+8** (introduced at F7) plus the Week-9 defense rubric in IM-2 §9; weights are **40% talk craft, 30%
+defense, 20% slide architecture, 10% reproducibility of the demo result**. Phase 1's content-mastery
+rubric is **paused** during this week — the cohort is not learning new methods, they are defending
+the ones they have.
 
-Every Friday follows this skeleton; only the mentor topic, the live clinic, and the deliverable
-change. The discipline that makes it work is that **nothing solvable alone happens in the room** —
-the reading and most of the coding are async, and the two synchronous hours buy what a recording
-cannot: the mentor's live reasoning, a critique that responds to *this* student's error, and the
-experience of watching a result break in real time.
+### The four Phase-3 Fridays (Weeks 9–12 of NextGen = Weeks 10–12 of the book)
 
-### An alternative shape: the two-week aggregation
+NextGen Phase 3 runs Aug 21–Sep 11, four Fridays. Book Weeks 10–12 cover three of them; the fourth
+Friday is the submission day itself. Each Phase-3 Friday is two hours with the same internal shape
+as Phase 1, but the content shifts entirely to revision craft:
 
-Some instructors will prefer a coarser mapping that keeps each Friday tied to a single coherent block
-rather than splitting and merging. The two-week aggregation pairs the book-weeks and is a clean
-fallback when the cohort is large or underprepared:
+| Friday | Date | Book week | Synchronous focus | Async between Fridays | Deliverable due |
+|---|---|---|---|---|---|
+| **F8** | Aug 21 | W10 — Reading the referee | Mentor 10, *"How a referee actually reads"*; live walk through a real referee report on a published paper | Read your own referee report (peer + instructor); draft response memo | **First revision draft + response memo (Week 10)** |
+| **F9** | Aug 28 | W11 — Executing the revision | Mentor 11, *"Revising without overfitting to the referee"*; specification-curve clinic; figure/table refactoring | Execute the revision: new robustness, rewritten exposition, publication-quality tables | **Final manuscript (Week 11)** |
+| **F10** | Sep 4 | W12 — Closeout | Mentor 12, *"What submission day looks like"*; reproducibility audit on a peer's repo | `make clean && make all` on a fresh machine; responsible-AI disclosure; MARS deposit dry-run | Reproducibility certificate; submission packet assembled |
+| **F11** | Sep 11 | — | **Submission Friday**: live submission to Schar Young Scholars Journal + MARS deposit; cohort retrospective | — | **Submission Week 12** |
 
-| Friday | Paired book-weeks | Synchronous focus |
-|---|---|---|
-| F1 | W1 | Inference foundations + Mentor 1 |
-| F2 | W2 | OLS + SEs + Mentor 2 |
-| F3 | W3 | Causal I (IV) + Mentor 3 |
-| F4 | W4 | Causal II (DiD) + Mentor 4 |
-| F5 | W5 + W6 | Reading + AI co-pilot (Mentors 5 & 6) |
-| F6 | W7 | PAP + memo (Mentor 7) |
-| F7 | W8 kickoff | Execution + defense setup (Mentor 8) |
+The grading rubric used during Phase 3 is the **paper-refinement rubric** in IM-2 §10–§12, not the
+Phase-1 content rubric and not the Phase-2 presentation rubric. Its weights are: **35% response-memo
+quality (does the student show they read what the referee actually said?), 30% revision quality (is
+the new draft actually better?), 20% reproducibility (does the rebuilt artifact pass `make clean &&
+make all` on a fresh env?), 15% responsible-AI disclosure and MARS metadata.** Notice what this
+rubric does *not* reward: novelty, additional analyses, scope creep. A Phase-3 paper that adds three
+new robustness checks at the referee's request and otherwise leaves the design alone scores higher
+than one that pivots to a new identification strategy in the third week. This is deliberate; the
+camp is teaching revision discipline, not a second project.
 
-This is the shape the table in the preceding subsection uses, and it is the recommended default: it
-preserves one mentor session per Friday, keeps the dependency order intact, and folds the two reading
-weeks into the single Friday they naturally share. The only weeks that *must* combine to fit seven
-slots are W5 and W6; everything else maps one-to-one, with Weeks 7–8 deliberately spilling into Phases
-2–3. If your cohort can sustain more than two contact hours a week, do not compress at all beyond the
-W5/W6 merge — give Weeks 7 and 8 their own Fridays and run an eighth or ninth session inside Phase 2.
+### Grading rubric weights shift across phases
 
-### Phase 2 — the conference presentation (~Aug 15)
-
-This is Week 8's deliverables D3 (the 8-minute presentation + defense) and a near-final D1 (the
-paper). Between F7 and the conference, students are executing the W8 chapters asynchronously — the
-specification curve (Ch 8.1), the robustness battery and Oster δ (Ch 8.2), publication-quality tables
-(Ch 8.3, Appendix D), peer review (Ch 8.4), and the talk + replication packet (Ch 8.5). The
-conference *is* the defense the W8 assessment grades; the threats-table-as-question-bank discipline
-(W8 D3) is what students rehearse here. Schedule at least one **dry-run defense** in the week before
-the conference — the mentor-session facilitation notes in IM-4 give the question protocol.
-
-### Phase 3 — four weeks of paper refinement
-
-This is Week 8's D1 (final paper), D2 (the `make clean && make all` replication packet), and D4 (the
-responsible-AI disclosure) brought to the publication bar. Phase 3 is where the camp's terminal
-standard — a paper that survives a first-round referee at the Schar Young Scholars Journal and
-deposits cleanly into GMU MARS (W8 assessment, "How the rubric maps to the publication standard") —
-is actually met. The four weeks correspond to a revise-and-resubmit cycle: referee report (peer +
-instructor), R&R memo, revision, and the final reproducibility check. Grade D1/D2/D4 against the
-**200-point terminal rubric** at the end of Phase 3 (IM-2), not at the conference.
+The rubric is not constant across the twelve weeks, and instructors should make this shift explicit
+to the cohort *before* it happens, not after a student is surprised by their Phase-2 score. **Phase
+1 weights methods mastery (≈40%), the PAP (≈25%), and the frozen first-look (≈35%)** — the things a
+student can demonstrate through executed empirical work. **Phase 2 weights the presentation rubric
+from Mentor 8** as above. **Phase 3 weights the paper-refinement rubric from Mentors 10–12** as
+above. The terminal grade is a weighted blend: 50% Phase 1, 20% Phase 2, 30% Phase 3 — the heaviest
+weight on the longest phase, but enough Phase-3 weight that a strong revision can rescue a
+mid-pack first-look.
 
 ### What gets cut, and what never does
 
-Be explicit with yourself about the trade. Under the 7-Friday compression you will **cut**: most
-in-session chapter reading (moved to async), three of every five problem sets (keep the highest-signal
-two per week — IM-5 flags them), and most in-session notebook execution (demo one, assign the rest).
-You will **protect, without exception**: the dependency order of Weeks 1→4; at least one mentor
-session per Friday; the W7 PAP-and-tag discipline (the pre-registration freeze is non-negotiable —
-breaking it voids the meaning of every Week-8 p-value); and the W8 reproducibility standard
-(`make clean && make all`). A compression that sacrifices the freeze or the rebuild has not
-compressed the camp — it has cancelled it.
-
-### A note on cohort size and pacing variance
-
-The Friday shape above assumes a cohort small enough for a live critique circle (roughly 8–16). With
-a larger cohort, push critique into asynchronous peer-review pairs (Ch 8.4 machinery) and reserve the
-Friday live block for the mentor segment and a single worked example. With a cohort that arrives
-underprepared on the prerequisites, run the **Prerequisite Self-Test** (Front Matter FM-4) *before*
-F1 and route weak students to Appendices A (math) and B (Python/LaTeX) as async remediation during
-F1–F2 — do not let prerequisite gaps surface for the first time during the OLS week, when they
-compound. IM-6 covers the access side of this (compute, seats, accommodations); the pacing side is
-simply: diagnose early, remediate async, and never let the synchronous Friday become a lecture you
-could have recorded.
+Be explicit with yourself about the trade. Under the seven-Friday Phase-1 compression you will
+**cut**: most in-session chapter reading (async), three of every five problem sets per week (keep
+the highest-signal two — IM-5 flags them), and most in-session notebook execution (demo one, assign
+the rest). You will **protect, without exception**: the dependency order of Weeks 1→4; at least one
+mentor session per Friday; the W7 PAP-and-tag discipline (the pre-registration freeze is
+non-negotiable); the W8 first-look freeze; and the W12 reproducibility standard (`make clean && make
+all`). A compression that sacrifices any of these has not compressed the camp — it has cancelled it.
 
 ---
 
 ## 4. A pacing checklist for the instructor
 
-Before the program starts:
+Before the program starts: provision WRDS seats and Hopper/A100 compute for the weeks that need
+them (W2 Fama–MacBeth, W4 HMDA DiD, W5 portfolio sorts, W6 AI module, W7–W8 capstone, and again for
+Phase-3 revisions); run FM-4 (Prerequisite Self-Test) and triage; pin the environment
+(`python=3.11` + the CONVENTIONS §5 stack) and confirm every notebook runs on a fresh env; stand up
+GitHub Classroom and the repo template so the `pap-filed` and `first-look-frozen` tag workflows are
+ready by F6 and F7.
 
-- Provision WRDS seats and Hopper/A100 compute for the weeks that need them (W2 Fama–MacBeth, W4
-  HMDA DiD, W5 portfolio sorts, W6 AI module, W7–W8 capstone). Lead time is the binding constraint;
-  see IM-6.
-- Run FM-4 (Prerequisite Self-Test) and triage. Assign Appendix A/B remediation to anyone who misses
-  the calculus/probability/Python anchors.
-- Pin the environment (`python=3.11` + the CONVENTIONS §5 stack) and confirm every notebook runs on
-  a fresh env. A week whose code does not run is a week lost.
-- Stand up GitHub Classroom and the repo template (Lab 7 / Appendix B.2) so the `pap-filed` tag
-  workflow is ready by F6.
+Each Phase-1 Friday: confirm the prior deliverable arrived and was graded against its rubric (IM-2)
+before the session, so the debrief is specific; keep the synchronous two hours for what cannot
+happen alone; assign the next deliverable explicitly with its rubric attached.
 
-Each Friday:
+Phase 2 week (Aug 10–14): schedule the **Mon Aug 10 dry-run** as a hard calendar event; confirm the
+threats-table question bank is built before the peer dry-run on Aug 12; book the symposium logistics
+(room, A/V, faculty critics) by F6 at the latest.
 
-- Confirm the prior deliverable arrived and was graded against its rubric (IM-2) before the session,
-  so the debrief is specific.
-- Keep the synchronous two hours for what cannot happen alone — the mentor's reasoning, live
-  critique, pair debugging — and push everything solvable individually to async pre-work.
-- Assign the next deliverable explicitly, with its rubric attached.
-
-Across Phases 2–3:
-
-- Schedule a dry-run defense before the ~Aug 15 conference.
-- Reserve the final Phase-3 week for the `make clean && make all` check on every student's repo —
-  it is the single most objective row in the terminal rubric, and it is the MARS deposit standard.
+Each Phase-3 Friday: confirm the referee report was delivered Monday so the cohort has four days
+with it before the synchronous critique; protect the W12 reproducibility check (it is the single
+most objective row in the terminal rubric, and it is the MARS deposit standard); reserve the final
+Friday (Sep 11) for the actual submission, not for more revision.
 
 The clock is unforgiving precisely because the deliverable is real: these papers are headed for an
-actual journal and an actual repository. Pace the camp so that the freeze holds, the code rebuilds,
-and every student can say the sentence the whole program exists to let them say truthfully — *here is
-what I found, here is why you should believe it, and here is the command that lets you check me.*
+actual journal and an actual repository. Pace the camp so that the freezes hold (Week 5 PAP, Week 5
+first-look), the symposium gets a real defense (Aug 14), the revision is disciplined rather than
+sprawling, the code rebuilds on submission day (Sep 11), and every student can say the sentence the
+whole program exists to let them say truthfully — *here is what I found, here is why you should
+believe it, and here is the command that lets you check me.*
